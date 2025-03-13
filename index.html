@@ -135,7 +135,7 @@
         let pokedexData = {};
 
         Promise.all([
-            fetch('pokemon_updated.json').then(response => response.json()),
+            fetch('pokemon.json').then(response => response.json()),
             fetch('pokedex.json').then(response => response.json())
         ]).then(([pokemonJson, pokedexJson]) => {
             pokemonData = pokemonJson;
