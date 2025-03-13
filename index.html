@@ -79,7 +79,7 @@
             border-radius: 5px;
             display: inline-block;
         }
-        .tier-S+ { background-color: purple; }
+        .tier-Splus { background-color: purple; }
 		.tier-S { background-color: purple; }
         .tier-A { background-color: green; }
         .tier-B { background-color: lightgreen; }
@@ -193,7 +193,7 @@
                 const { tier, bst_medio } = matches[0];
                 if (tier) {
                     let tierElement = document.createElement("div");
-                    tierElement.className = `tier-container tier-${tier}`;
+                    tierElement.className = `tier-container tier-${tier.replace("+", "plus")}`;
                     tierElement.textContent = `Tier: ${tier} | BST Medio: ${bst_medio}`;
                     tierDisplay.appendChild(tierElement);
                 }
