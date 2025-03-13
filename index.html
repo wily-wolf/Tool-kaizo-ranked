@@ -188,8 +188,8 @@
                 (selectedType2 === "Qualsiasi" || p.types.includes(selectedType2))
             );
             
-            // Mostra il tier solo se NESSUNO dei tipi è "Qualsiasi"
-            if (matches.length > 0 && selectedType1 !== "Qualsiasi" && selectedType2 !== "Qualsiasi") {
+            // Mostra il tier solo se NESSUNO dei tipi è "Qualsiasi" E i tipi selezionati sono diversi tra loro
+			if (matches.length > 0 && selectedType1 !== "Qualsiasi" && selectedType2 !== "Qualsiasi" && selectedType1 !== selectedType2) {
                 const { tier, bst_medio } = matches[0];
                 if (tier) {
                     let tierElement = document.createElement("div");
