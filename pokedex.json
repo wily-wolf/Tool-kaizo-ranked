@@ -4998,6 +4998,22 @@
             "other": false
         }
     },
+	{
+        "id": 413,
+        "name": "Wormadam (Sabbia)",
+        "bst": 424,
+        "tier": null,
+        "types": [
+            "Coleottero",
+            "Terra"
+        ],
+        "evolutions": {
+            "level": false,
+            "friendship": false,
+            "item": false,
+            "other": false
+        }
+    },
     {
         "id": 414,
         "name": "Mothim",
