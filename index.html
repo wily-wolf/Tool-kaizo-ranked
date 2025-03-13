@@ -3,83 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filtra Pokémon per Uovo</title>
+    <title>Tool fusioni uova</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 20px;
+            background-color: #121212;
+            color: white;
         }
         select {
             margin: 10px;
-            padding: 5px;
+            padding: 10px;
+            font-size: 16px;
+            width: 90%;
+            max-width: 300px;
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+            border-radius: 5px;
         }
         ul {
             list-style-type: none;
             padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
         }
         li {
-            background: #f4f4f4;
-            margin: 5px;
+            background: #1e1e1e;
+            margin: 10px auto;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .pokemon-img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .pokemon-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .pokemon-details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 5px;
+            flex-wrap: wrap;
+        }
+        .bst-box {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: black;
+        }
+        .bst-high { background-color: purple; }
+        .bst-1 { background-color: green; }
+        .bst-2 { background-color: lightgreen; }
+        .bst-3 { background-color: yellow; }
+        .bst-4 { background-color: orange; }
+        .bst-5 { background-color: orangered; }
+        .bst-6 { background-color: red; }
+        .tier-container {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
             padding: 10px;
             border-radius: 5px;
+            display: inline-block;
+        }
+        .tier-S { background-color: purple; }
+        .tier-A { background-color: green; }
+        .tier-B { background-color: lightgreen; }
+        .tier-C { background-color: yellow; }
+        .tier-D { background-color: orange; }
+        .tier-E { background-color: orangered; }
+        .tier-F { background-color: red; }
+        .pokemon-types {
+            font-size: 16px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            margin: auto;
+        }
+        .credits {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 12px;
+            color: #aaa;
+        }
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+            select {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Filtra Pokémon per Tipo di Uovo</h1>
-    <label for="type1">Seleziona il primo tipo:</label>
-    <select id="type1"></select>
-    
-    <label for="type2">Seleziona il secondo tipo:</label>
-    <select id="type2"></select>
+    <div class="credits">Credits: frenk95ita, kuroe, Renga98 per i dati, davoemme per l'idea</div>
+    <h1>Tool fusioni uova</h1>
+    <div class="container">
+        <label for="type1">Seleziona il primo tipo:</label>
+        <select id="type1"></select>
+        
+        <label for="type2">Seleziona il secondo tipo:</label>
+        <select id="type2"></select>
+    </div>
     
     <h2>Pokémon ottenibili:</h2>
+    <div id="tier-display"></div>
     <ul id="pokemon-list"></ul>
     
     <script>
+        const types = ["Qualsiasi", "Normale", "Fuoco", "Acqua", "Erba", "Elettro", "Ghiaccio", "Lotta", "Veleno", "Terra", "Volante", "Psico", "Coleottero", "Roccia", "Spettro", "Drago", "Buio", "Acciaio"];
         let pokemonData = [];
+        let pokedexData = {};
 
-        fetch('pokemon.json')
-            .then(response => response.json())
-            .then(data => {
-                pokemonData = data;
-                initialize();
-            });
+        Promise.all([
+            fetch('pokemon_updated.json').then(response => response.json()),
+            fetch('pokedex.json').then(response => response.json())
+        ]).then(([pokemonJson, pokedexJson]) => {
+            pokemonData = pokemonJson;
+            pokedexData = Object.fromEntries(pokedexJson.map(p => [p.name, p]));
+            initialize();
+        });
 
         function initialize() {
-            const types = [...new Set(pokemonData.flatMap(p => p.types))].filter(t => t !== "Nessuno");
             const type1Select = document.getElementById("type1");
             const type2Select = document.getElementById("type2");
-            const pokemonList = document.getElementById("pokemon-list");
-
+            
             types.forEach(type => {
-                let option1 = document.createElement("option");
-                let option2 = document.createElement("option");
-                option1.value = option2.value = type;
-                option1.textContent = option2.textContent = type;
-                type1Select.appendChild(option1);
-                type2Select.appendChild(option2);
+                let option = new Option(type, type);
+                type1Select.add(option.cloneNode(true));
+                type2Select.add(option.cloneNode(true));
             });
 
             type1Select.addEventListener("change", filterPokemon);
             type2Select.addEventListener("change", filterPokemon);
         }
 
+        function getBstClass(bst) {
+            if (bst >= 580) return "bst-high";
+            if (bst >= 567) return "bst-1";
+            if (bst >= 500) return "bst-2";
+            if (bst >= 465) return "bst-3";
+            if (bst >= 430) return "bst-4";
+            if (bst >= 380) return "bst-5";
+            return "bst-6";
+        }
+
         function filterPokemon() {
             const selectedType1 = document.getElementById("type1").value;
             const selectedType2 = document.getElementById("type2").value;
             const pokemonList = document.getElementById("pokemon-list");
+            const tierDisplay = document.getElementById("tier-display");
             pokemonList.innerHTML = "";
+            tierDisplay.innerHTML = "";
 
-            const filteredPokemon = pokemonData.filter(p =>
-                (p.types.includes(selectedType1) && p.types.includes(selectedType2))
+            const matches = pokemonData.filter(p =>
+                (selectedType1 === "Qualsiasi" || p.types.includes(selectedType1)) &&
+                (selectedType2 === "Qualsiasi" || p.types.includes(selectedType2))
             );
-
-            filteredPokemon.forEach(p => {
+            
+            if (matches.length > 0) {
+                const { tier, bst_medio } = matches[0];
+                if (tier) {
+                    let tierElement = document.createElement("div");
+                    tierElement.className = `tier-container tier-${tier}`;
+                    tierElement.textContent = `Tier: ${tier} | BST Medio: ${bst_medio}`;
+                    tierDisplay.appendChild(tierElement);
+                }
+            }
+            
+            // Raccogli tutti i Pokémon corrispondenti
+            let allPokemon = [];
+            matches.forEach(match => {
+                match.pokemon.forEach(pokemon => {
+                    let pokeData = pokedexData[pokemon] || {};
+                    // Usa 0 come BST predefinito se non disponibile
+                    allPokemon.push({
+                        name: pokemon,
+                        bst: pokeData.bst || 0,
+                        types: pokeData.types || []
+                    });
+                });
+            });
+            
+            // Ordina i Pokémon per BST in ordine decrescente
+            allPokemon.sort((a, b) => b.bst - a.bst);
+            
+            // Crea gli elementi della lista
+            allPokemon.forEach(pokemon => {
                 let li = document.createElement("li");
-                li.textContent = p.name;
+                
+                // Immagine
+                let img = document.createElement("img");
+                img.src = `https://img.pokemondb.net/sprites/black-white/normal/${pokemon.name.toLowerCase()}.png`;
+                img.alt = pokemon.name;
+                img.className = "pokemon-img";
+                
+                // Nome del Pokémon
+                let nameElement = document.createElement("div");
+                nameElement.className = "pokemon-name";
+                nameElement.textContent = pokemon.name;
+                
+                // Dettagli (BST e tipi)
+                let detailsElement = document.createElement("div");
+                detailsElement.className = "pokemon-details";
+                
+                // BST box
+                let bstElement = document.createElement("span");
+                bstElement.className = `bst-box ${getBstClass(pokemon.bst)}`;
+                bstElement.textContent = pokemon.bst || "N/A";
+                
+                // Tipi
+                let typesElement = document.createElement("span");
+                typesElement.className = "pokemon-types";
+                typesElement.textContent = pokemon.types.length > 0 ? pokemon.types.join(" / ") : "N/A";
+                
+                // Costruzione della lista
+                detailsElement.appendChild(bstElement);
+                detailsElement.appendChild(typesElement);
+                
+                li.appendChild(img);
+                li.appendChild(nameElement);
+                li.appendChild(detailsElement);
+                
                 pokemonList.appendChild(li);
             });
         }
