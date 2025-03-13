@@ -1,0 +1,6 @@
+[
+    { "name": "Charmander", "types": ["Fuoco", "Drago"] },
+    { "name": "Squirtle", "types": ["Acqua", "Nessuno"] },
+    { "name": "Bulbasaur", "types": ["Erba", "Veleno"] },
+    { "name": "Pikachu", "types": ["Elettrico", "Nessuno"] }
+]

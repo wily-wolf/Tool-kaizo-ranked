@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtra Pokémon per Uovo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        select {
+            margin: 10px;
+            padding: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f4f4f4;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Filtra Pokémon per Tipo di Uovo</h1>
+    <label for="type1">Seleziona il primo tipo:</label>
+    <select id="type1"></select>
+    
+    <label for="type2">Seleziona il secondo tipo:</label>
+    <select id="type2"></select>
+    
+    <h2>Pokémon ottenibili:</h2>
+    <ul id="pokemon-list"></ul>
+    
+    <script>
+        let pokemonData = [];
+
+        fetch('pokemon.json')
+            .then(response => response.json())
+            .then(data => {
+                pokemonData = data;
+                initialize();
+            });
+
+        function initialize() {
+            const types = [...new Set(pokemonData.flatMap(p => p.types))].filter(t => t !== "Nessuno");
+            const type1Select = document.getElementById("type1");
+            const type2Select = document.getElementById("type2");
+            const pokemonList = document.getElementById("pokemon-list");
+
+            types.forEach(type => {
+                let option1 = document.createElement("option");
+                let option2 = document.createElement("option");
+                option1.value = option2.value = type;
+                option1.textContent = option2.textContent = type;
+                type1Select.appendChild(option1);
+                type2Select.appendChild(option2);
+            });
+
+            type1Select.addEventListener("change", filterPokemon);
+            type2Select.addEventListener("change", filterPokemon);
+        }
+
+        function filterPokemon() {
+            const selectedType1 = document.getElementById("type1").value;
+            const selectedType2 = document.getElementById("type2").value;
+            const pokemonList = document.getElementById("pokemon-list");
+            pokemonList.innerHTML = "";
+
+            const filteredPokemon = pokemonData.filter(p =>
+                (p.types.includes(selectedType1) && p.types.includes(selectedType2))
+            );
+
+            filteredPokemon.forEach(p => {
+                let li = document.createElement("li");
+                li.textContent = p.name;
+                pokemonList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
