@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tool fusioni uova</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -80,7 +79,8 @@
             border-radius: 5px;
             display: inline-block;
         }
-        .tier-S { background-color: purple; }
+        .tier-S+ { background-color: purple; }
+		.tier-S { background-color: purple; }
         .tier-A { background-color: green; }
         .tier-B { background-color: lightgreen; }
         .tier-C { background-color: yellow; }
@@ -135,12 +135,20 @@
         let pokedexData = {};
 
         Promise.all([
-            fetch('pokemon.json').then(response => response.json()),
-            fetch('pokedex.json').then(response => response.json())
+            fetch('./pokemon.json').then(response => response.json()).catch(error => {
+                console.error('Errore nel caricamento del file pokemon_updated.json:', error);
+                return [];
+            }),
+            fetch('./pokedex.json').then(response => response.json()).catch(error => {
+                console.error('Errore nel caricamento del file pokedex.json:', error);
+                return [];
+            })
         ]).then(([pokemonJson, pokedexJson]) => {
             pokemonData = pokemonJson;
-            pokedexData = Object.fromEntries(pokedexJson.map(p => [p.name, p]));
+            pokedexData = Object.fromEntries((pokedexJson || []).map(p => [p.name, p]));
             initialize();
+        }).catch(error => {
+            console.error('Errore generale:', error);
         });
 
         function initialize() {
@@ -180,7 +188,8 @@
                 (selectedType2 === "Qualsiasi" || p.types.includes(selectedType2))
             );
             
-            if (matches.length > 0) {
+            // Mostra il tier solo se NESSUNO dei tipi è "Qualsiasi"
+            if (matches.length > 0 && selectedType1 !== "Qualsiasi" && selectedType2 !== "Qualsiasi") {
                 const { tier, bst_medio } = matches[0];
                 if (tier) {
                     let tierElement = document.createElement("div");
