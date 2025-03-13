@@ -111,7 +111,7 @@
     },
     {
         "id": 487,
-        "name": "GiratinaAltered Forme",
+        "name": "Giratina",
         "bst": 680,
         "tier": "n.a.",
         "types": [
@@ -378,7 +378,7 @@
     },
     {
         "id": 386,
-        "name": "DeoxysNormal Forme",
+        "name": "Deoxys",
         "bst": 600,
         "tier": "n.a.",
         "types": [
@@ -470,7 +470,7 @@
     },
     {
         "id": 492,
-        "name": "ShayminLand Forme",
+        "name": "Shaymin",
         "bst": 600,
         "tier": "n.a.",
         "types": [
@@ -517,7 +517,7 @@
     },
     {
         "id": 645,
-        "name": "LandorusIncarnate Forme",
+        "name": "Landorus",
         "bst": 600,
         "tier": "n.a.",
         "types": [
@@ -533,7 +533,7 @@
     },
     {
         "id": 648,
-        "name": "MeloettaAria Forme",
+        "name": "Meloetta",
         "bst": 600,
         "tier": "n.a.",
         "types": [
@@ -796,7 +796,7 @@
     },
     {
         "id": 641,
-        "name": "TornadusIncarnate Forme",
+        "name": "Tornadus",
         "bst": 580,
         "tier": "n.a.",
         "types": [
@@ -827,7 +827,7 @@
     },
     {
         "id": 647,
-        "name": "KeldeoOrdinary Forme",
+        "name": "Keldeo",
         "bst": 580,
         "tier": "n.a.",
         "types": [
@@ -3525,7 +3525,7 @@
     },
     {
         "id": 555,
-        "name": "DarmanitanStandard Mode",
+        "name": "Darmanitan",
         "bst": 480,
         "tier": null,
         "types": [
@@ -4984,7 +4984,7 @@
     },
     {
         "id": 413,
-        "name": "WormadamPlant Cloak",
+        "name": "Wormadam",
         "bst": 424,
         "tier": null,
         "types": [
