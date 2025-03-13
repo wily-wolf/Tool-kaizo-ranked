@@ -1,6 +1,1007 @@
 [
-    { "name": "Charmander", "types": ["Fuoco", "Drago"] },
-    { "name": "Squirtle", "types": ["Acqua", "Nessuno"] },
-    { "name": "Bulbasaur", "types": ["Erba", "Veleno"] },
-    { "name": "Pikachu", "types": ["Elettrico", "Nessuno"] }
+    {
+        "types": [
+            "Acqua",
+            "Psico"
+        ],
+        "pokemon": [
+            "Slowbro",
+            "Slowking",
+            "Slowpoke",
+            "Starmie"
+        ],
+        "tier": "A",
+        "bst_medio": 454,
+        "quantita": 4
+    },
+    {
+        "types": [
+            "Erba",
+            "Lotta"
+        ],
+        "pokemon": [
+            "Breloom",
+            "Virizion"
+        ],
+        "tier": "A",
+        "bst_medio": 520,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Fuoco",
+            "Buio"
+        ],
+        "pokemon": [
+            "Houndoom",
+            "Houndour"
+        ],
+        "tier": "A",
+        "bst_medio": 415,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Fuoco",
+            "Coleottero"
+        ],
+        "pokemon": [
+            "Larvesta",
+            "Volcarona"
+        ],
+        "tier": "A",
+        "bst_medio": 455,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Ghiaccio",
+            "Volante"
+        ],
+        "pokemon": [
+            "Articuno",
+            "Delibird"
+        ],
+        "tier": "A",
+        "bst_medio": 455,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Terra",
+            "Veleno"
+        ],
+        "pokemon": [
+            "Nidoking",
+            "Nidoqueen"
+        ],
+        "tier": "A",
+        "bst_medio": 495,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Volante",
+            "Roccia"
+        ],
+        "pokemon": [
+            "Aerodactyl",
+            "Archen",
+            "Archeops"
+        ],
+        "tier": "A",
+        "bst_medio": 494,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Volante",
+            "Veleno"
+        ],
+        "pokemon": [
+            "Crobat",
+            "Golbat",
+            "Zubat"
+        ],
+        "tier": "A",
+        "bst_medio": 412,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Fuoco",
+            "Lotta"
+        ],
+        "pokemon": [
+            "Blaziken",
+            "Combusken",
+            "Emboar",
+            "Infernape",
+            "Monferno",
+            "Pignite"
+        ],
+        "tier": "A ",
+        "bst_medio": 470,
+        "quantita": 6
+    },
+    {
+        "types": [
+            "Acqua",
+            "Ghiaccio"
+        ],
+        "pokemon": [
+            "Cloyster",
+            "Dewgong",
+            "Lapras",
+            "Sealeo",
+            "Spheal",
+            "Walrein"
+        ],
+        "tier": "B",
+        "bst_medio": 461,
+        "quantita": 6
+    },
+    {
+        "types": [
+            "Acqua",
+            "Spettro"
+        ],
+        "pokemon": [
+            "Frillish",
+            "Jellicent"
+        ],
+        "tier": "B",
+        "bst_medio": 408,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Buio",
+            "Spettro"
+        ],
+        "pokemon": [
+            "Sableye",
+            "Spiritomb"
+        ],
+        "tier": "B",
+        "bst_medio": 433,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Buio",
+            "Veleno"
+        ],
+        "pokemon": [
+            "Drapion",
+            "Skuntank",
+            "Stunky"
+        ],
+        "tier": "B",
+        "bst_medio": 436,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Buio",
+            "Volante"
+        ],
+        "pokemon": [
+            "Honchkrow",
+            "Mandibuzz",
+            "Murkrow",
+            "Vullaby"
+        ],
+        "tier": "B",
+        "bst_medio": 448,
+        "quantita": 4
+    },
+    {
+        "types": [
+            "Elettro",
+            "Acciaio"
+        ],
+        "pokemon": [
+            "Magnemite",
+            "Magneton",
+            "Magnezone"
+        ],
+        "tier": "B",
+        "bst_medio": 442,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Ghiaccio",
+            "Psico"
+        ],
+        "pokemon": [
+            "Jynx",
+            "Smoochum"
+        ],
+        "tier": "B",
+        "bst_medio": 380,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Lotta",
+            "Buio"
+        ],
+        "pokemon": [
+            "Scrafty",
+            "Scraggy"
+        ],
+        "tier": "B",
+        "bst_medio": 418,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Terra",
+            "Erba"
+        ],
+        "pokemon": [
+            "Torterra"
+        ],
+        "tier": "B",
+        "bst_medio": 525,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Terra",
+            "Spettro"
+        ],
+        "pokemon": [
+            "Golett",
+            "Golurk"
+        ],
+        "tier": "B",
+        "bst_medio": 393,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Volante",
+            "Acciaio"
+        ],
+        "pokemon": [
+            "Skarmory"
+        ],
+        "tier": "B",
+        "bst_medio": 465,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Acqua",
+            "Veleno"
+        ],
+        "pokemon": [
+            "Qwilfish",
+            "Tentacool",
+            "Tentacruel"
+        ],
+        "tier": "B ",
+        "bst_medio": 427,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Fuoco",
+            "Spettro"
+        ],
+        "pokemon": [
+            "Chandelure",
+            "Lampent",
+            "Litwick"
+        ],
+        "tier": "B ",
+        "bst_medio": 388,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Ghiaccio",
+            "Spettro"
+        ],
+        "pokemon": [
+            "Froslass"
+        ],
+        "tier": "B ",
+        "bst_medio": 480,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Acciaio",
+            "Coleottero"
+        ],
+        "pokemon": [
+            "Durant",
+            "Escavalier",
+            "Forretress",
+            "Scizor"
+        ],
+        "tier": "C",
+        "bst_medio": 486,
+        "quantita": 4
+    },
+    {
+        "types": [
+            "Acciaio",
+            "Psico"
+        ],
+        "pokemon": [
+            "Beldum",
+            "Bronzong",
+            "Bronzor",
+            "Metang"
+        ],
+        "tier": "C",
+        "bst_medio": 380,
+        "quantita": 4
+    },
+    {
+        "types": [
+            "Acqua",
+            "Buio"
+        ],
+        "pokemon": [
+            "Carvanha",
+            "Crawdaunt",
+            "Sharpedo"
+        ],
+        "tier": "C",
+        "bst_medio": 411,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Acqua",
+            "Elettro"
+        ],
+        "pokemon": [
+            "Chinchou",
+            "Lanturn"
+        ],
+        "tier": "C",
+        "bst_medio": 395,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Elettro",
+            "Coleottero"
+        ],
+        "pokemon": [
+            "Galvantula",
+            "Joltik"
+        ],
+        "tier": "C",
+        "bst_medio": 396,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Erba",
+            "Psico"
+        ],
+        "pokemon": [
+            "Exeggcute",
+            "Exeggutor"
+        ],
+        "tier": "C",
+        "bst_medio": 423,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Erba",
+            "Roccia"
+        ],
+        "pokemon": [
+            "Cradily",
+            "Lileep"
+        ],
+        "tier": "C",
+        "bst_medio": 425,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Lotta",
+            "Coleottero"
+        ],
+        "pokemon": [
+            "Heracross"
+        ],
+        "tier": "C",
+        "bst_medio": 500,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Lotta",
+            "Psico"
+        ],
+        "pokemon": [
+            "Gallade",
+            "Medicham",
+            "Meditite"
+        ],
+        "tier": "C",
+        "bst_medio": 403,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Roccia",
+            "Coleottero"
+        ],
+        "pokemon": [
+            "Anorith",
+            "Armaldo",
+            "Crustle",
+            "Dwebble",
+            "Shuckle"
+        ],
+        "tier": "C",
+        "bst_medio": 431,
+        "quantita": 5
+    },
+    {
+        "types": [
+            "Terra",
+            "Buio"
+        ],
+        "pokemon": [
+            "Krokodile",
+            "Krokorok",
+            "Sandile"
+        ],
+        "tier": "C",
+        "bst_medio": 384,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Terra",
+            "Ghiaccio"
+        ],
+        "pokemon": [
+            "Mamoswine",
+            "Piloswine",
+            "Swinub"
+        ],
+        "tier": "C",
+        "bst_medio": 410,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Terra",
+            "Psico"
+        ],
+        "pokemon": [
+            "Baltoy",
+            "Claydol"
+        ],
+        "tier": "C",
+        "bst_medio": 400,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Volante",
+            "Psico"
+        ],
+        "pokemon": [
+            "Natu",
+            "Sigilyph",
+            "Swoobat",
+            "Woobat",
+            "Xatu"
+        ],
+        "tier": "C",
+        "bst_medio": 404,
+        "quantita": 5
+    },
+    {
+        "types": [
+            "Ghiaccio",
+            "Buio"
+        ],
+        "pokemon": [
+            "Sneasel",
+            "Weavile"
+        ],
+        "tier": "C ",
+        "bst_medio": 470,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Acqua",
+            "Erba"
+        ],
+        "pokemon": [
+            "Lombre",
+            "Lotad",
+            "Ludicolo"
+        ],
+        "tier": "D",
+        "bst_medio": 347,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Buio",
+            "Acciaio"
+        ],
+        "pokemon": [
+            "Bisharp",
+            "Pawniard"
+        ],
+        "tier": "D",
+        "bst_medio": 415,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Erba",
+            "Acciaio"
+        ],
+        "pokemon": [
+            "Ferroseed",
+            "Ferrothorn"
+        ],
+        "tier": "D",
+        "bst_medio": 397,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Lotta",
+            "Veleno"
+        ],
+        "pokemon": [
+            "Croagunk",
+            "Toxicroak"
+        ],
+        "tier": "D",
+        "bst_medio": 395,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Spettro",
+            "Veleno"
+        ],
+        "pokemon": [
+            "Gastly",
+            "Gengar",
+            "Haunter"
+        ],
+        "tier": "D",
+        "bst_medio": 405,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Terra",
+            "Elettro"
+        ],
+        "pokemon": [
+            "Stunfisk"
+        ],
+        "tier": "D",
+        "bst_medio": 471,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Terra",
+            "Volante"
+        ],
+        "pokemon": [
+            "Gligar",
+            "Gliscor"
+        ],
+        "tier": "D",
+        "bst_medio": 470,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Acqua",
+            "Volante"
+        ],
+        "pokemon": [
+            "Ducklett",
+            "Gyarados",
+            "Mantine",
+            "Mantyke",
+            "Pelipper",
+            "Swanna",
+            "Wingull"
+        ],
+        "tier": "E",
+        "bst_medio": 404,
+        "quantita": 7
+    },
+    {
+        "types": [
+            "Elettro",
+            "Spettro"
+        ],
+        "pokemon": [
+            "Rotom"
+        ],
+        "tier": "E",
+        "bst_medio": 440,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Erba",
+            "Ghiaccio"
+        ],
+        "pokemon": [
+            "Abomasnow",
+            "Snover"
+        ],
+        "tier": "E",
+        "bst_medio": 414,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Erba",
+            "Veleno"
+        ],
+        "pokemon": [
+            "Amoonguss",
+            "Bellsprout",
+            "Budew",
+            "Bulbasaur",
+            "Foongus",
+            "Gloom",
+            "Ivysaur",
+            "Oddish",
+            "Roselia",
+            "Roserade",
+            "Venusaur",
+            "Victreebel",
+            "Vileplume",
+            "Weepinbell"
+        ],
+        "tier": "E",
+        "bst_medio": 397,
+        "quantita": 14
+    },
+    {
+        "types": [
+            "Roccia",
+            "Psico"
+        ],
+        "pokemon": [
+            "Lunatone",
+            "Solrock"
+        ],
+        "tier": "E",
+        "bst_medio": 440,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Spettro",
+            "Volante"
+        ],
+        "pokemon": [
+            "Drifblim",
+            "Drifloon"
+        ],
+        "tier": "E",
+        "bst_medio": 423,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Acciaio",
+            "Roccia"
+        ],
+        "pokemon": [
+            "Aggron",
+            "Aron",
+            "Bastiodon",
+            "Lairon",
+            "Probopass",
+            "Shieldon"
+        ],
+        "tier": "F",
+        "bst_medio": 443,
+        "quantita": 6
+    },
+    {
+        "types": [
+            "Acqua",
+            "Coleottero"
+        ],
+        "pokemon": [
+            "Surskit"
+        ],
+        "tier": "F",
+        "bst_medio": 269,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Acqua",
+            "Roccia"
+        ],
+        "pokemon": [
+            "Carracosta",
+            "Corsola",
+            "Kabuto",
+            "Kabutops",
+            "Omanyte",
+            "Omastar",
+            "Relicanth",
+            "Tirtouga"
+        ],
+        "tier": "F",
+        "bst_medio": 427,
+        "quantita": 8
+    },
+    {
+        "types": [
+            "Erba",
+            "Buio"
+        ],
+        "pokemon": [
+            "Cacturne",
+            "Nuzleaf",
+            "Shiftry"
+        ],
+        "tier": "F",
+        "bst_medio": 432,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Erba",
+            "Coleottero"
+        ],
+        "pokemon": [
+            "Leavanny",
+            "Paras",
+            "Parasect",
+            "Sewaddle",
+            "Swadloon",
+            "Wormadam (Pianta)"
+        ],
+        "tier": "F",
+        "bst_medio": 382,
+        "quantita": 6
+    },
+    {
+        "types": [
+            "Erba",
+            "Volante"
+        ],
+        "pokemon": [
+            "Hoppip",
+            "Jumpluff",
+            "Skiploom",
+            "Tropius"
+        ],
+        "tier": "F",
+        "bst_medio": 375,
+        "quantita": 4
+    },
+    {
+        "types": [
+            "Fuoco",
+            "Roccia"
+        ],
+        "pokemon": [
+            "Magcargo"
+        ],
+        "tier": "F",
+        "bst_medio": 410,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Spettro",
+            "Coleottero"
+        ],
+        "pokemon": [
+            "Shedinja"
+        ],
+        "tier": "F",
+        "bst_medio": 236,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Terra",
+            "Acqua"
+        ],
+        "pokemon": [
+            "Barboach",
+            "Gastrodon",
+            "Marshtomp",
+            "Palpitoad",
+            "Quagsire",
+            "Seismitoad",
+            "Swampert",
+            "Whiscash",
+            "Wooper"
+        ],
+        "tier": "F",
+        "bst_medio": 410,
+        "quantita": 9
+    },
+    {
+        "types": [
+            "Terra",
+            "Coleottero"
+        ],
+        "pokemon": [
+            "Nincada",
+            "Wormadam (Sabbia)"
+        ],
+        "tier": "F",
+        "bst_medio": 345,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Terra",
+            "Fuoco"
+        ],
+        "pokemon": [
+            "Camerupt",
+            "Numel"
+        ],
+        "tier": "F",
+        "bst_medio": 383,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Terra",
+            "Roccia"
+        ],
+        "pokemon": [
+            "Geodude",
+            "Golem",
+            "Graveler",
+            "Larvitar",
+            "Onix",
+            "Pupitar",
+            "Rhydon",
+            "Rhyhorn",
+            "Rhyperior"
+        ],
+        "tier": "F",
+        "bst_medio": 404,
+        "quantita": 9
+    },
+    {
+        "types": [
+            "Volante",
+            "Coleottero"
+        ],
+        "pokemon": [
+            "Beautifly",
+            "Butterfree",
+            "Combee",
+            "Ledian",
+            "Ledyba",
+            "Masquerain",
+            "Mothim",
+            "Ninjask",
+            "Scyther",
+            "Vespiquen",
+            "Yanma",
+            "Yanmega"
+        ],
+        "tier": "F",
+        "bst_medio": 404,
+        "quantita": 12
+    },
+    {
+        "types": [
+            "Acqua",
+            "Lotta"
+        ],
+        "pokemon": [
+            "Keldeo",
+            "Poliwrath"
+        ],
+        "tier": "S",
+        "bst_medio": 540,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Fuoco",
+            "Volante"
+        ],
+        "pokemon": [
+            "Charizard",
+            "Moltres"
+        ],
+        "tier": "S",
+        "bst_medio": 557,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Lotta",
+            "Roccia"
+        ],
+        "pokemon": [
+            "Terrakion"
+        ],
+        "tier": "S",
+        "bst_medio": 580,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Terra",
+            "Acciaio"
+        ],
+        "pokemon": [
+            "Excadrill",
+            "Steelix"
+        ],
+        "tier": "S",
+        "bst_medio": 509,
+        "quantita": 2
+    },
+    {
+        "types": [
+            "Acqua",
+            "Acciaio"
+        ],
+        "pokemon": [
+            "Empoleon"
+        ],
+        "tier": "S+",
+        "bst_medio": 530,
+        "quantita": 1
+    },
+    {
+        "types": [
+            "Elettro",
+            "Volante"
+        ],
+        "pokemon": [
+            "Emolga",
+            "Thundurus",
+            "Zapdos"
+        ],
+        "tier": "S+",
+        "bst_medio": 529,
+        "quantita": 3
+    },
+    {
+        "types": [
+            "Lotta",
+            "Acciaio"
+        ],
+        "pokemon": [
+            "Cobalion",
+            "Lucario"
+        ],
+        "tier": "S+",
+        "bst_medio": 553,
+        "quantita": 2
+    }
 ]
