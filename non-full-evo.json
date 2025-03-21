@@ -1,0 +1,2135 @@
+[
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bulbasaur.png",
+        "Evolving from": "Bulbasaur",
+        "Level": 16,
+        "BST": 318,
+        "Types": [
+            "Erba",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ivysaur.png",
+        "Evolving from": "Ivysaur",
+        "Level": 32,
+        "BST": 405,
+        "Types": [
+            "Erba",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/charmander.png",
+        "Evolving from": "Charmander",
+        "Level": 16,
+        "BST": 309,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/charmeleon.png",
+        "Evolving from": "Charmeleon",
+        "Level": 36,
+        "BST": 405,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/squirtle.png",
+        "Evolving from": "Squirtle",
+        "Level": 16,
+        "BST": 314,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wartortle.png",
+        "Evolving from": "Wartortle",
+        "Level": 36,
+        "BST": 405,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/caterpie.png",
+        "Evolving from": "Caterpie",
+        "Level": 7,
+        "BST": 195,
+        "Types": [
+            "Coleottero"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/metapod.png",
+        "Evolving from": "Metapod",
+        "Level": 10,
+        "BST": 205,
+        "Types": [
+            "Coleottero"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/weedle.png",
+        "Evolving from": "Weedle",
+        "Level": 7,
+        "BST": 195,
+        "Types": [
+            "Coleottero",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kakuna.png",
+        "Evolving from": "Kakuna",
+        "Level": 10,
+        "BST": 205,
+        "Types": [
+            "Coleottero",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pidgey.png",
+        "Evolving from": "Pidgey",
+        "Level": 18,
+        "BST": 251,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pidgeotto.png",
+        "Evolving from": "Pidgeotto",
+        "Level": 36,
+        "BST": 349,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rattata.png",
+        "Evolving from": "Rattata",
+        "Level": 20,
+        "BST": 253,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/spearow.png",
+        "Evolving from": "Spearow",
+        "Level": 20,
+        "BST": 262,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ekans.png",
+        "Evolving from": "Ekans",
+        "Level": 22,
+        "BST": 288,
+        "Types": [
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sandshrew.png",
+        "Evolving from": "Sandshrew",
+        "Level": 22,
+        "BST": 300,
+        "Types": [
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/nidoran-f.png",
+        "Evolving from": "Nidoran♀",
+        "Level": 16,
+        "BST": 275,
+        "Types": [
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/nidoran-m.png",
+        "Evolving from": "Nidoran♂",
+        "Level": 16,
+        "BST": 273,
+        "Types": [
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zubat.png",
+        "Evolving from": "Zubat",
+        "Level": 22,
+        "BST": 245,
+        "Types": [
+            "Veleno",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/oddish.png",
+        "Evolving from": "Oddish",
+        "Level": 21,
+        "BST": 320,
+        "Types": [
+            "Erba",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/paras.png",
+        "Evolving from": "Paras",
+        "Level": 24,
+        "BST": 285,
+        "Types": [
+            "Coleottero",
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/venonat.png",
+        "Evolving from": "Venonat",
+        "Level": 31,
+        "BST": 305,
+        "Types": [
+            "Coleottero",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/diglett.png",
+        "Evolving from": "Diglett",
+        "Level": 26,
+        "BST": 265,
+        "Types": [
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/meowth.png",
+        "Evolving from": "Meowth",
+        "Level": 28,
+        "BST": 290,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/psyduck.png",
+        "Evolving from": "Psyduck",
+        "Level": 33,
+        "BST": 320,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mankey.png",
+        "Evolving from": "Mankey",
+        "Level": 28,
+        "BST": 305,
+        "Types": [
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/poliwag.png",
+        "Evolving from": "Poliwag",
+        "Level": 25,
+        "BST": 300,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/abra.png",
+        "Evolving from": "Abra",
+        "Level": 16,
+        "BST": 310,
+        "Types": [
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/machop.png",
+        "Evolving from": "Machop",
+        "Level": 28,
+        "BST": 305,
+        "Types": [
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bellsprout.png",
+        "Evolving from": "Bellsprout",
+        "Level": 21,
+        "BST": 300,
+        "Types": [
+            "Erba",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tentacool.png",
+        "Evolving from": "Tentacool",
+        "Level": 30,
+        "BST": 335,
+        "Types": [
+            "Acqua",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/geodude.png",
+        "Evolving from": "Geodude",
+        "Level": 25,
+        "BST": 300,
+        "Types": [
+            "Roccia",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ponyta.png",
+        "Evolving from": "Ponyta",
+        "Level": 40,
+        "BST": 410,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/slowpoke.png",
+        "Evolving from": "Slowpoke",
+        "Level": 37,
+        "BST": 315,
+        "Types": [
+            "Acqua",
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/magnemite.png",
+        "Evolving from": "Magnemite",
+        "Level": 30,
+        "BST": 325,
+        "Types": [
+            "Elettro",
+            "Acciaio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/doduo.png",
+        "Evolving from": "Doduo",
+        "Level": 31,
+        "BST": 310,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/seel.png",
+        "Evolving from": "Seel",
+        "Level": 34,
+        "BST": 325,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/grimer.png",
+        "Evolving from": "Grimer",
+        "Level": 38,
+        "BST": 325,
+        "Types": [
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gastly.png",
+        "Evolving from": "Gastly",
+        "Level": 25,
+        "BST": 310,
+        "Types": [
+            "Spettro",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/drowzee.png",
+        "Evolving from": "Drowzee",
+        "Level": 26,
+        "BST": 328,
+        "Types": [
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/krabby.png",
+        "Evolving from": "Krabby",
+        "Level": 28,
+        "BST": 325,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/voltorb.png",
+        "Evolving from": "Voltorb",
+        "Level": 30,
+        "BST": 330,
+        "Types": [
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cubone.png",
+        "Evolving from": "Cubone",
+        "Level": 28,
+        "BST": 320,
+        "Types": [
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tyrogue.png",
+        "Evolving from": "Tyrogue",
+        "Level": 20,
+        "BST": 210,
+        "Types": [
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/koffing.png",
+        "Evolving from": "Koffing",
+        "Level": 35,
+        "BST": 340,
+        "Types": [
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rhyhorn.png",
+        "Evolving from": "Rhyhorn",
+        "Level": 42,
+        "BST": 345,
+        "Types": [
+            "Terra",
+            "Roccia"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/horsea.png",
+        "Evolving from": "Horsea",
+        "Level": 32,
+        "BST": 295,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/goldeen.png",
+        "Evolving from": "Goldeen",
+        "Level": 33,
+        "BST": 320,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/smoochum.png",
+        "Evolving from": "Smoochum",
+        "Level": 30,
+        "BST": 305,
+        "Types": [
+            "Ghiaccio",
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/elekid.png",
+        "Evolving from": "Elekid",
+        "Level": 30,
+        "BST": 360,
+        "Types": [
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/magby.png",
+        "Evolving from": "Magby",
+        "Level": 30,
+        "BST": 365,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/magikarp.png",
+        "Evolving from": "Magikarp",
+        "Level": 20,
+        "BST": 200,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/omanyte.png",
+        "Evolving from": "Omanyte",
+        "Level": 40,
+        "BST": 355,
+        "Types": [
+            "Roccia",
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kabuto.png",
+        "Evolving from": "Kabuto",
+        "Level": 40,
+        "BST": 355,
+        "Types": [
+            "Roccia",
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dratini.png",
+        "Evolving from": "Dratini",
+        "Level": 30,
+        "BST": 300,
+        "Types": [
+            "Drago"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dragonair.png",
+        "Evolving from": "Dragonair",
+        "Level": 55,
+        "BST": 420,
+        "Types": [
+            "Drago"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/chikorita.png",
+        "Evolving from": "Chikorita",
+        "Level": 16,
+        "BST": 318,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bayleef.png",
+        "Evolving from": "Bayleef",
+        "Level": 32,
+        "BST": 405,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cyndaquil.png",
+        "Evolving from": "Cyndaquil",
+        "Level": 14,
+        "BST": 309,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/quilava.png",
+        "Evolving from": "Quilava",
+        "Level": 36,
+        "BST": 405,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/totodile.png",
+        "Evolving from": "Totodile",
+        "Level": 18,
+        "BST": 314,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/croconaw.png",
+        "Evolving from": "Croconaw",
+        "Level": 30,
+        "BST": 405,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sentret.png",
+        "Evolving from": "Sentret",
+        "Level": 15,
+        "BST": 215,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/hoothoot.png",
+        "Evolving from": "Hoothoot",
+        "Level": 20,
+        "BST": 262,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ledyba.png",
+        "Evolving from": "Ledyba",
+        "Level": 18,
+        "BST": 265,
+        "Types": [
+            "Coleottero",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/spinarak.png",
+        "Evolving from": "Spinarak",
+        "Level": 22,
+        "BST": 250,
+        "Types": [
+            "Coleottero",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/chinchou.png",
+        "Evolving from": "Chinchou",
+        "Level": 27,
+        "BST": 330,
+        "Types": [
+            "Acqua",
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/natu.png",
+        "Evolving from": "Natu",
+        "Level": 25,
+        "BST": 320,
+        "Types": [
+            "Psico",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mareep.png",
+        "Evolving from": "Mareep",
+        "Level": 15,
+        "BST": 280,
+        "Types": [
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/flaaffy.png",
+        "Evolving from": "Flaaffy",
+        "Level": 30,
+        "BST": 365,
+        "Types": [
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/marill.png",
+        "Evolving from": "Marill",
+        "Level": 18,
+        "BST": 250,
+        "Types": [
+            "Acqua",
+            " "
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/hoppip.png",
+        "Evolving from": "Hoppip",
+        "Level": 18,
+        "BST": 250,
+        "Types": [
+            "Erba",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/skiploom.png",
+        "Evolving from": "Skiploom",
+        "Level": 27,
+        "BST": 340,
+        "Types": [
+            "Erba",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wooper.png",
+        "Evolving from": "Wooper",
+        "Level": 20,
+        "BST": 210,
+        "Types": [
+            "Acqua",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wynaut.png",
+        "Evolving from": "Wynaut",
+        "Level": 15,
+        "BST": 260,
+        "Types": [
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pineco.png",
+        "Evolving from": "Pineco",
+        "Level": 31,
+        "BST": 290,
+        "Types": [
+            "Coleottero"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/snubbull.png",
+        "Evolving from": "Snubbull",
+        "Level": 23,
+        "BST": 300,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/teddiursa.png",
+        "Evolving from": "Teddiursa",
+        "Level": 30,
+        "BST": 330,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/slugma.png",
+        "Evolving from": "Slugma",
+        "Level": 38,
+        "BST": 250,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/swinub.png",
+        "Evolving from": "Swinub",
+        "Level": 33,
+        "BST": 250,
+        "Types": [
+            "Ghiaccio",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/remoraid.png",
+        "Evolving from": "Remoraid",
+        "Level": 25,
+        "BST": 300,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/houndour.png",
+        "Evolving from": "Houndour",
+        "Level": 24,
+        "BST": 330,
+        "Types": [
+            "Buio",
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/phanpy.png",
+        "Evolving from": "Phanpy",
+        "Level": 25,
+        "BST": 330,
+        "Types": [
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/larvitar.png",
+        "Evolving from": "Larvitar",
+        "Level": 30,
+        "BST": 300,
+        "Types": [
+            "Roccia",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pupitar.png",
+        "Evolving from": "Pupitar",
+        "Level": 55,
+        "BST": 410,
+        "Types": [
+            "Roccia",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/treecko.png",
+        "Evolving from": "Treecko",
+        "Level": 16,
+        "BST": 310,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/grovyle.png",
+        "Evolving from": "Grovyle",
+        "Level": 36,
+        "BST": 405,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/torchic.png",
+        "Evolving from": "Torchic",
+        "Level": 16,
+        "BST": 310,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/combusken.png",
+        "Evolving from": "Combusken",
+        "Level": 36,
+        "BST": 405,
+        "Types": [
+            "Fuoco",
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mudkip.png",
+        "Evolving from": "Mudkip",
+        "Level": 16,
+        "BST": 310,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/marshtomp.png",
+        "Evolving from": "Marshtomp",
+        "Level": 36,
+        "BST": 405,
+        "Types": [
+            "Acqua",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/poochyena.png",
+        "Evolving from": "Poochyena",
+        "Level": 18,
+        "BST": 220,
+        "Types": [
+            "Buio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zigzagoon.png",
+        "Evolving from": "Zigzagoon",
+        "Level": 20,
+        "BST": 240,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wurmple.png",
+        "Evolving from": "Wurmple",
+        "Level": 7,
+        "BST": 195,
+        "Types": [
+            "Coleottero"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/silcoon.png",
+        "Evolving from": "Silcoon",
+        "Level": 10,
+        "BST": 205,
+        "Types": [
+            "Coleottero"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cascoon.png",
+        "Evolving from": "Cascoon",
+        "Level": 10,
+        "BST": 205,
+        "Types": [
+            "Coleottero"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lotad.png",
+        "Evolving from": "Lotad",
+        "Level": 14,
+        "BST": 220,
+        "Types": [
+            "Acqua",
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/seedot.png",
+        "Evolving from": "Seedot",
+        "Level": 14,
+        "BST": 220,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/taillow.png",
+        "Evolving from": "Taillow",
+        "Level": 22,
+        "BST": 270,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wingull.png",
+        "Evolving from": "Wingull",
+        "Level": 25,
+        "BST": 270,
+        "Types": [
+            "Acqua",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ralts.png",
+        "Evolving from": "Ralts",
+        "Level": 20,
+        "BST": 198,
+        "Types": [
+            "Psico",
+            " "
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kirlia.png",
+        "Evolving from": "Kirlia",
+        "Level": 30,
+        "BST": 278,
+        "Types": [
+            "Psico",
+            " "
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/surskit.png",
+        "Evolving from": "Surskit",
+        "Level": 22,
+        "BST": 269,
+        "Types": [
+            "Coleottero",
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shroomish.png",
+        "Evolving from": "Shroomish",
+        "Level": 23,
+        "BST": 295,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/slakoth.png",
+        "Evolving from": "Slakoth",
+        "Level": 18,
+        "BST": 280,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vigoroth.png",
+        "Evolving from": "Vigoroth",
+        "Level": 36,
+        "BST": 440,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/nincada.png",
+        "Evolving from": "Nincada",
+        "Level": 20,
+        "BST": 266,
+        "Types": [
+            "Coleottero",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/whismur.png",
+        "Evolving from": "Whismur",
+        "Level": 20,
+        "BST": 240,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/loudred.png",
+        "Evolving from": "Loudred",
+        "Level": 40,
+        "BST": 360,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/makuhita.png",
+        "Evolving from": "Makuhita",
+        "Level": 24,
+        "BST": 237,
+        "Types": [
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/aron.png",
+        "Evolving from": "Aron",
+        "Level": 32,
+        "BST": 330,
+        "Types": [
+            "Acciaio",
+            "Roccia"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lairon.png",
+        "Evolving from": "Lairon",
+        "Level": 42,
+        "BST": 430,
+        "Types": [
+            "Acciaio",
+            "Roccia"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/meditite.png",
+        "Evolving from": "Meditite",
+        "Level": 37,
+        "BST": 280,
+        "Types": [
+            "Lotta",
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/electrike.png",
+        "Evolving from": "Electrike",
+        "Level": 26,
+        "BST": 295,
+        "Types": [
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gulpin.png",
+        "Evolving from": "Gulpin",
+        "Level": 26,
+        "BST": 302,
+        "Types": [
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/carvanha.png",
+        "Evolving from": "Carvanha",
+        "Level": 30,
+        "BST": 305,
+        "Types": [
+            "Acqua",
+            "Buio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wailmer.png",
+        "Evolving from": "Wailmer",
+        "Level": 40,
+        "BST": 400,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/numel.png",
+        "Evolving from": "Numel",
+        "Level": 33,
+        "BST": 305,
+        "Types": [
+            "Fuoco",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/spoink.png",
+        "Evolving from": "Spoink",
+        "Level": 32,
+        "BST": 330,
+        "Types": [
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/trapinch.png",
+        "Evolving from": "Trapinch",
+        "Level": 35,
+        "BST": 290,
+        "Types": [
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vibrava.png",
+        "Evolving from": "Vibrava",
+        "Level": 45,
+        "BST": 340,
+        "Types": [
+            "Terra",
+            "Drago"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cacnea.png",
+        "Evolving from": "Cacnea",
+        "Level": 32,
+        "BST": 335,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/swablu.png",
+        "Evolving from": "Swablu",
+        "Level": 35,
+        "BST": 310,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/barboach.png",
+        "Evolving from": "Barboach",
+        "Level": 30,
+        "BST": 288,
+        "Types": [
+            "Acqua",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/corphish.png",
+        "Evolving from": "Corphish",
+        "Level": 30,
+        "BST": 308,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/baltoy.png",
+        "Evolving from": "Baltoy",
+        "Level": 36,
+        "BST": 300,
+        "Types": [
+            "Terra",
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lileep.png",
+        "Evolving from": "Lileep",
+        "Level": 40,
+        "BST": 355,
+        "Types": [
+            "Roccia",
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/anorith.png",
+        "Evolving from": "Anorith",
+        "Level": 40,
+        "BST": 355,
+        "Types": [
+            "Roccia",
+            "Coleottero"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shuppet.png",
+        "Evolving from": "Shuppet",
+        "Level": 37,
+        "BST": 295,
+        "Types": [
+            "Spettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/duskull.png",
+        "Evolving from": "Duskull",
+        "Level": 37,
+        "BST": 295,
+        "Types": [
+            "Spettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/snorunt.png",
+        "Evolving from": "Snorunt",
+        "Level": 42,
+        "BST": 300,
+        "Types": [
+            "Ghiaccio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/spheal.png",
+        "Evolving from": "Spheal",
+        "Level": 32,
+        "BST": 290,
+        "Types": [
+            "Ghiaccio",
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sealeo.png",
+        "Evolving from": "Sealeo",
+        "Level": 44,
+        "BST": 410,
+        "Types": [
+            "Ghiaccio",
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bagon.png",
+        "Evolving from": "Bagon",
+        "Level": 30,
+        "BST": 300,
+        "Types": [
+            "Drago"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shelgon.png",
+        "Evolving from": "Shelgon",
+        "Level": 50,
+        "BST": 420,
+        "Types": [
+            "Drago"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/beldum.png",
+        "Evolving from": "Beldum",
+        "Level": 20,
+        "BST": 300,
+        "Types": [
+            "Acciaio",
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/metang.png",
+        "Evolving from": "Metang",
+        "Level": 45,
+        "BST": 420,
+        "Types": [
+            "Acciaio",
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/turtwig.png",
+        "Evolving from": "Turtwig",
+        "Level": 18,
+        "BST": 318,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/grotle.png",
+        "Evolving from": "Grotle",
+        "Level": 32,
+        "BST": 405,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/chimchar.png",
+        "Evolving from": "Chimchar",
+        "Level": 14,
+        "BST": 309,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/monferno.png",
+        "Evolving from": "Monferno",
+        "Level": 36,
+        "BST": 405,
+        "Types": [
+            "Fuoco",
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/piplup.png",
+        "Evolving from": "Piplup",
+        "Level": 16,
+        "BST": 314,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/prinplup.png",
+        "Evolving from": "Prinplup",
+        "Level": 36,
+        "BST": 405,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/starly.png",
+        "Evolving from": "Starly",
+        "Level": 14,
+        "BST": 245,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/staravia.png",
+        "Evolving from": "Staravia",
+        "Level": 34,
+        "BST": 340,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bidoof.png",
+        "Evolving from": "Bidoof",
+        "Level": 15,
+        "BST": 250,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kricketot.png",
+        "Evolving from": "Kricketot",
+        "Level": 10,
+        "BST": 194,
+        "Types": [
+            "Coleottero"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shinx.png",
+        "Evolving from": "Shinx",
+        "Level": 15,
+        "BST": 263,
+        "Types": [
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/luxio.png",
+        "Evolving from": "Luxio",
+        "Level": 30,
+        "BST": 363,
+        "Types": [
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cranidos.png",
+        "Evolving from": "Cranidos",
+        "Level": 30,
+        "BST": 350,
+        "Types": [
+            "Roccia"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shieldon.png",
+        "Evolving from": "Shieldon",
+        "Level": 30,
+        "BST": 350,
+        "Types": [
+            "Roccia",
+            "Acciaio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/burmy-plant.png",
+        "Evolving from": "Burmy",
+        "Level": 20,
+        "BST": 224,
+        "Types": [
+            "Coleottero"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/combee.png",
+        "Evolving from": "Combee",
+        "Level": 21,
+        "BST": 244,
+        "Types": [
+            "Coleottero",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/buizel.png",
+        "Evolving from": "Buizel",
+        "Level": 26,
+        "BST": 330,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cherubi.png",
+        "Evolving from": "Cherubi",
+        "Level": 25,
+        "BST": 275,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shellos.png",
+        "Evolving from": "Shellos",
+        "Level": 30,
+        "BST": 325,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/drifloon.png",
+        "Evolving from": "Drifloon",
+        "Level": 28,
+        "BST": 348,
+        "Types": [
+            "Spettro",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/glameow.png",
+        "Evolving from": "Glameow",
+        "Level": 38,
+        "BST": 310,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/stunky.png",
+        "Evolving from": "Stunky",
+        "Level": 34,
+        "BST": 329,
+        "Types": [
+            "Veleno",
+            "Buio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bronzor.png",
+        "Evolving from": "Bronzor",
+        "Level": 33,
+        "BST": 300,
+        "Types": [
+            "Acciaio",
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gible.png",
+        "Evolving from": "Gible",
+        "Level": 24,
+        "BST": 300,
+        "Types": [
+            "Drago",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gabite.png",
+        "Evolving from": "Gabite",
+        "Level": 48,
+        "BST": 410,
+        "Types": [
+            "Drago",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/hippopotas.png",
+        "Evolving from": "Hippopotas",
+        "Level": 34,
+        "BST": 330,
+        "Types": [
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/skorupi.png",
+        "Evolving from": "Skorupi",
+        "Level": 40,
+        "BST": 330,
+        "Types": [
+            "Veleno",
+            "Coleottero"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/croagunk.png",
+        "Evolving from": "Croagunk",
+        "Level": 37,
+        "BST": 300,
+        "Types": [
+            "Veleno",
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/finneon.png",
+        "Evolving from": "Finneon",
+        "Level": 31,
+        "BST": 330,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/snover.png",
+        "Evolving from": "Snover",
+        "Level": 40,
+        "BST": 334,
+        "Types": [
+            "Erba",
+            "Ghiaccio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/snivy.png",
+        "Evolving from": "Snivy",
+        "Level": 17,
+        "BST": 308,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/servine.png",
+        "Evolving from": "Servine",
+        "Level": 36,
+        "BST": 413,
+        "Types": [
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tepig.png",
+        "Evolving from": "Tepig",
+        "Level": 17,
+        "BST": 308,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pignite.png",
+        "Evolving from": "Pignite",
+        "Level": 36,
+        "BST": 418,
+        "Types": [
+            "Fuoco",
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/oshawott.png",
+        "Evolving from": "Oshawott",
+        "Level": 17,
+        "BST": 308,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dewott.png",
+        "Evolving from": "Dewott",
+        "Level": 36,
+        "BST": 413,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/patrat.png",
+        "Evolving from": "Patrat",
+        "Level": 20,
+        "BST": 255,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lillipup.png",
+        "Evolving from": "Lillipup",
+        "Level": 16,
+        "BST": 275,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/herdier.png",
+        "Evolving from": "Herdier",
+        "Level": 32,
+        "BST": 370,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/purrloin.png",
+        "Evolving from": "Purrloin",
+        "Level": 20,
+        "BST": 281,
+        "Types": [
+            "Buio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pidove.png",
+        "Evolving from": "Pidove",
+        "Level": 21,
+        "BST": 264,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tranquill.png",
+        "Evolving from": "Tranquill",
+        "Level": 32,
+        "BST": 358,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/blitzle.png",
+        "Evolving from": "Blitzle",
+        "Level": 27,
+        "BST": 295,
+        "Types": [
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/roggenrola.png",
+        "Evolving from": "Roggenrola",
+        "Level": 25,
+        "BST": 280,
+        "Types": [
+            "Roccia"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/drilbur.png",
+        "Evolving from": "Drilbur",
+        "Level": 31,
+        "BST": 328,
+        "Types": [
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/timburr.png",
+        "Evolving from": "Timburr",
+        "Level": 25,
+        "BST": 305,
+        "Types": [
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tympole.png",
+        "Evolving from": "Tympole",
+        "Level": 25,
+        "BST": 294,
+        "Types": [
+            "Acqua"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/palpitoad.png",
+        "Evolving from": "Palpitoad",
+        "Level": 36,
+        "BST": 384,
+        "Types": [
+            "Acqua",
+            "Terra"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sewaddle.png",
+        "Evolving from": "Sewaddle",
+        "Level": 20,
+        "BST": 310,
+        "Types": [
+            "Coleottero",
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/venipede.png",
+        "Evolving from": "Venipede",
+        "Level": 22,
+        "BST": 260,
+        "Types": [
+            "Coleottero",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/whirlipede.png",
+        "Evolving from": "Whirlipede",
+        "Level": 30,
+        "BST": 360,
+        "Types": [
+            "Coleottero",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sandile.png",
+        "Evolving from": "Sandile",
+        "Level": 29,
+        "BST": 292,
+        "Types": [
+            "Terra",
+            "Buio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/krokorok.png",
+        "Evolving from": "Krokorok",
+        "Level": 40,
+        "BST": 351,
+        "Types": [
+            "Terra",
+            "Buio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/darumaka.png",
+        "Evolving from": "Darumaka",
+        "Level": 35,
+        "BST": 315,
+        "Types": [
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dwebble.png",
+        "Evolving from": "Dwebble",
+        "Level": 34,
+        "BST": 325,
+        "Types": [
+            "Coleottero",
+            "Roccia"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/scraggy.png",
+        "Evolving from": "Scraggy",
+        "Level": 39,
+        "BST": 348,
+        "Types": [
+            "Buio",
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/yamask.png",
+        "Evolving from": "Yamask",
+        "Level": 34,
+        "BST": 303,
+        "Types": [
+            "Spettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tirtouga.png",
+        "Evolving from": "Tirtouga",
+        "Level": 37,
+        "BST": 355,
+        "Types": [
+            "Acqua",
+            "Roccia"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/archen.png",
+        "Evolving from": "Archen",
+        "Level": 37,
+        "BST": 401,
+        "Types": [
+            "Roccia",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/trubbish.png",
+        "Evolving from": "Trubbish",
+        "Level": 36,
+        "BST": 329,
+        "Types": [
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zorua.png",
+        "Evolving from": "Zorua",
+        "Level": 30,
+        "BST": 330,
+        "Types": [
+            "Buio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gothita.png",
+        "Evolving from": "Gothita",
+        "Level": 32,
+        "BST": 290,
+        "Types": [
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gothorita.png",
+        "Evolving from": "Gothorita",
+        "Level": 41,
+        "BST": 390,
+        "Types": [
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/solosis.png",
+        "Evolving from": "Solosis",
+        "Level": 32,
+        "BST": 290,
+        "Types": [
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/duosion.png",
+        "Evolving from": "Duosion",
+        "Level": 41,
+        "BST": 370,
+        "Types": [
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ducklett.png",
+        "Evolving from": "Ducklett",
+        "Level": 35,
+        "BST": 305,
+        "Types": [
+            "Acqua",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vanillite.png",
+        "Evolving from": "Vanillite",
+        "Level": 35,
+        "BST": 305,
+        "Types": [
+            "Ghiaccio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vanillish.png",
+        "Evolving from": "Vanillish",
+        "Level": 47,
+        "BST": 395,
+        "Types": [
+            "Ghiaccio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/deerling.png",
+        "Evolving from": "Deerling",
+        "Level": 34,
+        "BST": 335,
+        "Types": [
+            "Normale",
+            "Erba"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/foongus.png",
+        "Evolving from": "Foongus",
+        "Level": 39,
+        "BST": 294,
+        "Types": [
+            "Erba",
+            "Veleno"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/frillish.png",
+        "Evolving from": "Frillish",
+        "Level": 40,
+        "BST": 335,
+        "Types": [
+            "Acqua",
+            "Spettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/joltik.png",
+        "Evolving from": "Joltik",
+        "Level": 36,
+        "BST": 319,
+        "Types": [
+            "Coleottero",
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ferroseed.png",
+        "Evolving from": "Ferroseed",
+        "Level": 40,
+        "BST": 305,
+        "Types": [
+            "Erba",
+            "Acciaio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/klink.png",
+        "Evolving from": "Klink",
+        "Level": 38,
+        "BST": 300,
+        "Types": [
+            "Acciaio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/klang.png",
+        "Evolving from": "Klang",
+        "Level": 49,
+        "BST": 440,
+        "Types": [
+            "Acciaio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tynamo.png",
+        "Evolving from": "Tynamo",
+        "Level": 39,
+        "BST": 275,
+        "Types": [
+            "Elettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/elgyem.png",
+        "Evolving from": "Elgyem",
+        "Level": 42,
+        "BST": 335,
+        "Types": [
+            "Psico"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/litwick.png",
+        "Evolving from": "Litwick",
+        "Level": 41,
+        "BST": 275,
+        "Types": [
+            "Spettro",
+            "Fuoco"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/axew.png",
+        "Evolving from": "Axew",
+        "Level": 38,
+        "BST": 320,
+        "Types": [
+            "Drago"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/fraxure.png",
+        "Evolving from": "Fraxure",
+        "Level": 48,
+        "BST": 410,
+        "Types": [
+            "Drago"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cubchoo.png",
+        "Evolving from": "Cubchoo",
+        "Level": 37,
+        "BST": 305,
+        "Types": [
+            "Ghiaccio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mienfoo.png",
+        "Evolving from": "Mienfoo",
+        "Level": 50,
+        "BST": 350,
+        "Types": [
+            "Lotta"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/golett.png",
+        "Evolving from": "Golett",
+        "Level": 43,
+        "BST": 303,
+        "Types": [
+            "Terra",
+            "Spettro"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pawniard.png",
+        "Evolving from": "Pawniard",
+        "Level": 52,
+        "BST": 340,
+        "Types": [
+            "Buio",
+            "Acciaio"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rufflet.png",
+        "Evolving from": "Rufflet",
+        "Level": 54,
+        "BST": 350,
+        "Types": [
+            "Normale",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vullaby.png",
+        "Evolving from": "Vullaby",
+        "Level": 54,
+        "BST": 370,
+        "Types": [
+            "Buio",
+            "Volante"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/deino.png",
+        "Evolving from": "Deino",
+        "Level": 50,
+        "BST": 300,
+        "Types": [
+            "Buio",
+            "Drago"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zweilous.png",
+        "Evolving from": "Zweilous",
+        "Level": 64,
+        "BST": 420,
+        "Types": [
+            "Buio",
+            "Drago"
+        ]
+    },
+    {
+        "Immagine": "https://img.pokemondb.net/sprites/scarlet-violet/icon/larvesta.png",
+        "Evolving from": "Larvesta",
+        "Level": 59,
+        "BST": 360,
+        "Types": [
+            "Coleottero",
+            "Fuoco"
+        ]
+    }
+]
