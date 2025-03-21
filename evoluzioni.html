@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evoluzioni Kaizo Ranked</title>
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7SP38WR0"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-ZB7SP38WR0');
+	</script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      text-align: center;
+      margin: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    select {
+      padding: 10px;
+      margin: 20px 0;
+      font-size: 1rem;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      border: 1px solid #555;
+      border-radius: 5px;
+      width: 90%;
+      max-width: 300px;
+    }
+    .results {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      border: 1px solid #444;
+    }
+    .card img {
+      width: 100px;
+      height: auto;
+    }
+    /* BST styling from index.html */
+    .bst-box {
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      color: black;
+      display: inline-block;
+      margin: 5px 0;
+    }
+    .bst-high { background-color: #A102A1; }
+    .bst-1 { background-color: green; }
+    .bst-2 { background-color: lightgreen; }
+    .bst-3 { background-color: yellow; }
+    .bst-4 { background-color: orange; }
+    .bst-5 { background-color: orangered; }
+    .bst-6 { background-color: red; }
+    
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(30, 30, 30, 0.95);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+      height: 45px;
+      box-sizing: border-box;
+    }
+    .logo {
+      font-size: 16px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-menu li {
+      margin: 0;
+      padding: 0;
+    }
+    .nav-menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 4px 6px;
+      transition: color 0.3s ease;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    .nav-menu li a:hover {
+      color: #FFD700;
+      text-decoration: underline;
+    }
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-toggle div {
+      width: 20px;
+      height: 2px;
+      background: white;
+      margin: 3px 0;
+    }
+    
+    /* Credits */
+    .credits {
+      margin: 55px 0 0 0px;
+      font-size: 11.5px;
+      color: #aaa;
+      text-align: left;
+      position: relative;
+      left: -10px;
+    }
+    
+    /* Main content */
+    .main-content {
+      padding-top: 25px;
+    }
+    
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        background: rgba(30, 30, 30, 0.95);
+        padding: 8px 0;
+        text-align: center;
+      }
+      .nav-menu.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="https://core.startab.it/">StartAB.it</a></li>
+      <li><a href="https://wesleystedman.github.io/ironmon-moveset-coverage-calc/">Coverage Calculator</a></li>
+      <li><a href="/index.html">Tool Uova</a></li>
+	  <li><a href="/evoluzioni.html">Evoluzioni</a></li>
+	  <li><a href="https://docs.google.com/spreadsheets/d/104zALQ-vnMOwINoSa1-Tu1MAWVjq_tLnXikVgl3sAf0/edit?usp=sharing">Doc. Preferiti 🔗</a></li>
+    </ul>
+  </nav>
+  
+  <div class="credits"></div>
+  
+  <div class="main-content">
+    <div class="container">
+      <h1>Evoluzioni Pokémon</h1>
+      <label for="pokemonSelect">Seleziona un Pokémon:</label>
+      <select id="pokemonSelect">
+        <option value="">-- Seleziona --</option>
+      </select>
+      <div id="results" class="results"></div>
+    </div>
+  </div>
+
+  <script>
+    let nonFullEvo = [];
+    let pokedex = [];
+
+    async function loadJSONFiles() {
+      try {
+        const nonFullEvoResponse = await fetch('non-full-evo.json');
+        nonFullEvo = await nonFullEvoResponse.json();
+        const pokedexResponse = await fetch('pokedex.json');
+        pokedex = await pokedexResponse.json();
+        populateSelect();
+      } catch (error) {
+        console.error('Errore nel caricamento JSON:', error);
+      }
+    }
+
+	function populateSelect() {
+	  const select = document.getElementById('pokemonSelect');
+	  
+	  // Crea un array dei nomi dei Pokémon e ordinalo alfabeticamente
+	  const sortedPokemon = nonFullEvo.map(pokemon => pokemon["Evolving from"]).sort();
+	  
+	  // Popola il select con i nomi ordinati
+	  sortedPokemon.forEach(name => {
+		const option = document.createElement('option');
+		option.value = name;
+		option.textContent = name;
+		select.appendChild(option);
+	  });
+	}
+
+    function getPokemonDataByName(name) {
+      return pokedex.find(p => p.name.toLowerCase() === name.toLowerCase());
+    }
+
+    function shareAtLeastOneType(types1, types2) {
+      return types1.some(type => types2.includes(type));
+    }
+    
+    function getBstClass(bst) {
+      if (bst >= 580) return "bst-high";
+      if (bst >= 523) return "bst-1";
+      if (bst >= 500) return "bst-2";
+      if (bst >= 465) return "bst-3";
+      if (bst >= 430) return "bst-4";
+      if (bst >= 380) return "bst-5";
+      return "bst-6";
+    }
+
+    document.getElementById('pokemonSelect').addEventListener('change', function() {
+      const selectedName = this.value;
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = '';
+
+      if (!selectedName) return;
+
+      const basePokemon = nonFullEvo.find(p => p["Evolving from"] === selectedName);
+      const basePokemonPokedex = getPokemonDataByName(selectedName);
+
+      if (!basePokemon || !basePokemonPokedex) {
+        resultsContainer.textContent = 'Dati non trovati per il Pokémon selezionato.';
+        return;
+      }
+
+      const candidates = pokedex.filter(p => 
+      p.bst > basePokemon.BST && 
+      p.bst <= 600 && // Max 600 BST
+      shareAtLeastOneType(p.types, basePokemon.Types)
+      );
+
+      if (candidates.length === 0) {
+        resultsContainer.textContent = 'Nessuna evoluzione trovata.';
+        return;
+      }
+
+      const probability = (1 / candidates.length).toFixed(3);
+
+      candidates.forEach(candidate => {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const img = document.createElement('img');
+        img.src = `https://img.pokemondb.net/sprites/black-white/normal/${candidate.name.toLowerCase()}.png`;
+        img.alt = candidate.name;
+        card.appendChild(img);
+
+        const nameEl = document.createElement('p');
+        nameEl.innerHTML = `<strong>${candidate.name}</strong>`;
+        card.appendChild(nameEl);
+
+        // BST con classe colorata
+        const bstEl = document.createElement('div');
+        const bstSpan = document.createElement('span');
+        bstSpan.className = `bst-box ${getBstClass(candidate.bst)}`;
+        bstSpan.textContent = candidate.bst;
+        bstEl.appendChild(bstSpan);
+        card.appendChild(bstEl);
+
+        const typesEl = document.createElement('p');
+        typesEl.textContent = `${candidate.types.join(', ')}`;
+        card.appendChild(typesEl);
+
+        const probEl = document.createElement('p');
+        probEl.textContent = `${(probability * 100).toFixed(1)}%`;
+        card.appendChild(probEl);
+
+        resultsContainer.appendChild(card);
+      });
+    });
+    
+    function toggleMenu() {
+      document.querySelector(".nav-menu").classList.toggle("active");
+    }
+
+    loadJSONFiles();
+  </script>
+</body>
+</html>
