@@ -1715,8 +1715,7 @@
         "bst": 518,
         "tier": null,
         "types": [
-            "Psico",
-            " "
+            "Psico"
         ],
         "evolutions": {
             "level": false,
@@ -3498,8 +3497,7 @@
         "bst": 480,
         "tier": null,
         "types": [
-            "Erba",
-            " "
+            "Erba"
         ],
         "evolutions": {
             "level": false,
@@ -4090,8 +4088,7 @@
         "bst": 460,
         "tier": null,
         "types": [
-            "Psico",
-            " "
+            "Psico"
         ],
         "evolutions": {
             "level": false,
@@ -4753,8 +4750,7 @@
         "bst": 435,
         "tier": null,
         "types": [
-            "Normale",
-            " "
+            "Normale"
         ],
         "evolutions": {
             "level": false,
@@ -5051,8 +5047,7 @@
         "bst": 420,
         "tier": null,
         "types": [
-            "Acqua",
-            " "
+            "Acqua"
         ],
         "evolutions": {
             "level": false,
@@ -6257,8 +6252,7 @@
         "bst": 380,
         "tier": null,
         "types": [
-            "Acciaio",
-            " "
+            "Acciaio"
         ],
         "evolutions": {
             "level": false,
@@ -7937,12 +7931,11 @@
     },
     {
         "id": 439,
-        "name": "Mime Jr.",
+        "name": "Mime-Jr",
         "bst": 310,
         "tier": null,
         "types": [
-            "Psico",
-            " "
+            "Psico"
         ],
         "evolutions": {
             "level": false,
@@ -9091,8 +9084,7 @@
         "bst": 278,
         "tier": null,
         "types": [
-            "Psico",
-            " "
+            "Psico"
         ],
         "evolutions": {
             "level": false,
@@ -9479,8 +9471,7 @@
         "bst": 250,
         "tier": null,
         "types": [
-            "Acqua",
-            " "
+            "Acqua"
         ],
         "evolutions": {
             "level": true,
@@ -9802,8 +9793,7 @@
         "bst": 210,
         "tier": null,
         "types": [
-            "Normale",
-            " "
+            "Normale"
         ],
         "evolutions": {
             "level": false,
@@ -9955,8 +9945,7 @@
         "bst": 198,
         "tier": null,
         "types": [
-            "Psico",
-            " "
+            "Psico"
         ],
         "evolutions": {
             "level": true,
@@ -10032,8 +10021,7 @@
         "bst": 190,
         "tier": null,
         "types": [
-            "Normale",
-            " "
+            "Normale"
         ],
         "evolutions": {
             "level": false,
