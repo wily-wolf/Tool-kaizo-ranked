@@ -1,0 +1,122 @@
+[
+  {
+    "move": "Absorb",
+    "type": "Erba"
+  },
+  {
+    "move": "Aqua Ring",
+    "type": "Acqua"
+  },
+  {
+    "move": "Drain Punch",
+    "type": "Lotta"
+  },
+  {
+    "move": "Dream Eater",
+    "type": "Psico"
+  },
+  {
+    "move": "Giga Drain",
+    "type": "Erba"
+  },
+    {
+    "move": "Heal Bell",
+    "type": "Normale"
+  },
+  {
+    "move": "Heal Order",
+    "type": "Coleottero"
+  },
+  {
+    "move": "Heal Pulse",
+    "type": "Psico"
+  },
+  {
+    "move": "Healing Wish",
+    "type": "Psico"
+  },
+  {
+    "move": "Horn Leech",
+    "type": "Erba"
+  },
+  {
+    "move": "Ingrain",
+    "type": "Erba"
+  },
+  {
+    "move": "Leech Life",
+    "type": "Coleottero"
+  },
+  {
+    "move": "Leech Seed",
+    "type": "Erba"
+  },
+  {
+    "move": "Lunar Dance",
+    "type": "Psico"
+  },
+  {
+    "move": "Mega Drain",
+    "type": "Erba"
+  },
+  {
+    "move": "Milk Drink",
+    "type": "Normale"
+  },
+  {
+    "move": "Moonlight",
+    "type": "Normale"
+  },
+  {
+    "move": "Morning Sun",
+    "type": "Normale"
+  },
+    {
+    "move": "Pain Split",
+    "type": "Normale"
+  },
+  {
+    "move": "Quiver Dance",
+    "type": "Coleottero"
+  },
+  {
+    "move": "Recover",
+    "type": "Normale"
+  },
+  {
+    "move": "Rest",
+    "type": "Normale"
+  },
+  {
+    "move": "Roost",
+    "type": "Volante"
+  },
+  {
+    "move": "Slack Off",
+    "type": "Normale"
+  },
+  {
+    "move": "Soft-Boiled",
+    "type": "Normale"
+  },
+   {
+    "move": "Spore",
+    "type": "Erba"
+  },
+  {
+    "move": "Swallow",
+    "type": "Normale"
+  },
+  {
+    "move": "Synthesis",
+    "type": "Erba"
+  },
+  {
+    "move": "Teleport",
+    "type": "Psico"
+  },
+  {
+    "move": "Wish",
+    "type": "Normale"
+  }
+]
