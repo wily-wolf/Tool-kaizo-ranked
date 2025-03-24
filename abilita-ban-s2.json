@@ -1,0 +1,26 @@
+[
+  {
+    "nome": "Contrary",
+    "descrizione": "Non ti permetterà di cliccare sulle mosse che ti droppano statistiche se hai l'abilità Contrary"
+  },
+  {
+    "nome": "No Guard",
+    "descrizione": "Non ti permetterà di cliccare sulle mosse che hanno meno di 51% di accuracy"
+  },
+  {
+    "nome": "Pure Power / Huge Power",
+    "descrizione": "Ora aumenta l'attacco del 20% e non del 100%"
+  },
+  {
+    "nome": "Poison Heal",
+    "descrizione": "Ora cura l'avvelenamento del vostro pokemon al termine del combattimento"
+  },
+  {
+    "nome": "Moxie",
+    "descrizione": "Ora aumenta l'attacco (in caso di sconfitta del pokemon avversario) solo il 33% delle volte"
+  },
+  {
+    "nome": "Moody",
+    "descrizione": "Ora ha il 50% di possibilità di attivarsi alla fine del turno"
+  }
+]
