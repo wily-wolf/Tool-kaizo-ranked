@@ -1,5 +1,13 @@
 [
   {
+    "nome": "Contrary",
+    "descrizione": "Non presente nella stagione 1"
+  },
+  {
+    "nome": "No Guard",
+    "descrizione": "Non presente nella stagione 1"
+  },
+  {
     "nome": "Pure Power / Huge Power",
     "descrizione": "Ora aumenta l'attacco del 20% e non del 100%"
   },
