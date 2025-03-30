@@ -215,6 +215,22 @@
       padding-top: 25px;
     }
     
+    /* Stile per i radio button */
+    .evolution-type {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      gap: 20px;
+    }
+    .evolution-type label {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .evolution-type input[type="radio"] {
+      margin-right: 8px;
+    }
+    
     @media (max-width: 768px) {
       .nav-menu {
         display: none;
@@ -249,9 +265,9 @@
       <li><a href="https://wesleystedman.github.io/ironmon-moveset-coverage-calc/">Coverage Calculator</a></li>
       <li><a href="index.html">Tool Uova</a></li>
       <li><a href="evoluzioni.html">Evoluzioni</a></li>
-      <li><a href="ban.html">Ban</a></li>
-      <li><a href="https://www.canva.com/design/DAGg-PsdqvM/e9vbIPlu0fJse0CxDWLjNA/view?utm_content=DAGg-PsdqvM&utm_campaign=designshare&utm_medium=link&utm_source=viewer">Guida</a></li>
-      <li><a href="https://www.canva.com/design/DAGQwO-JQrI/TTMsurbjR2oP8yBNl1K1vw/view?utm_content=DAGQwO-JQrI&utm_campaign=designshare&utm_medium=link&utm_source=viewer">FAQ</a></li>
+	  <li><a href="ban.html">Ban</a></li>
+	  <li><a href="https://www.canva.com/design/DAGg-PsdqvM/e9vbIPlu0fJse0CxDWLjNA/view?utm_content=DAGg-PsdqvM&utm_campaign=designshare&utm_medium=link&utm_source=viewer">Guida</a></li>
+	  <li><a href="https://www.canva.com/design/DAGQwO-JQrI/TTMsurbjR2oP8yBNl1K1vw/view?utm_content=DAGQwO-JQrI&utm_campaign=designshare&utm_medium=link&utm_source=viewer">FAQ</a></li>
       <li><a href="https://docs.google.com/spreadsheets/d/104zALQ-vnMOwINoSa1-Tu1MAWVjq_tLnXikVgl3sAf0/edit?usp=sharing">Doc. Preferiti 🔗</a></li>
     </ul>
   </nav>
@@ -261,6 +277,17 @@
   <div class="main-content">
     <div class="container">
       <h1>Evoluzioni Pokémon</h1>
+      
+      <!-- Selector for evolution type -->
+      <div class="evolution-type">
+        <label>
+          <input type="radio" name="evolutionType" value="normal" checked> Evoluzioni Normali
+        </label>
+        <label>
+          <input type="radio" name="evolutionType" value="enhanced"> Evoluzioni Potenziate
+        </label>
+      </div>
+      
       <label for="pokemonSelect">Seleziona un Pokémon:</label>
       <select id="pokemonSelect">
         <option value="">-- Seleziona --</option>
@@ -272,6 +299,7 @@
   <script>
     let nonFullEvo = [];
     let pokedex = [];
+    let maxBST = 600; // Default max BST for normal evolutions
 
     async function loadJSONFiles() {
       try {
@@ -341,9 +369,23 @@
     }
 
     $(document).ready(function() {
+      // Event handler per il cambio di tipo evoluzione
+      $('input[name="evolutionType"]').on('change', function() {
+        maxBST = $(this).val() === 'normal' ? 600 : 680;
+        
+        // Ricarica i risultati se è già selezionato un Pokémon
+        if ($('#pokemonSelect').val()) {
+          updateResults();
+        }
+      });
+      
       // Usa event handler di jQuery per Select2
       $('#pokemonSelect').on('change', function() {
-        const selectedName = $(this).val();
+        updateResults();
+      });
+      
+      function updateResults() {
+        const selectedName = $('#pokemonSelect').val();
         const resultsContainer = document.getElementById('results');
         resultsContainer.innerHTML = '';
 
@@ -359,7 +401,7 @@
 
         const candidates = pokedex.filter(p => 
           p.bst > basePokemon.BST && 
-          p.bst <= 600 && // Max 600 BST
+          p.bst <= maxBST && // Usa il valore maxBST corrente
           shareAtLeastOneType(p.types, basePokemon.Types)
         );
 
@@ -401,7 +443,7 @@
 
           resultsContainer.appendChild(card);
         });
-      });
+      }
     });
     
     function toggleMenu() {
