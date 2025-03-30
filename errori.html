@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StartAB - Ricerca Errori</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7SP38WR0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZB7SP38WR0');
+  </script>
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      text-align: center;
+      margin: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    select, input {
+      padding: 10px;
+      margin: 20px 0;
+      font-size: 1rem;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      border: 1px solid #555;
+      border-radius: 5px;
+      width: 90%;
+      max-width: 300px;
+    }
+    .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #2a2a2a;
+      color: #f0f0f0;
+      border: 1px solid #555;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #3a3a3a;
+    }
+    
+    /* Results styling */
+    .result-container {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 500px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      border: 1px solid #444;
+      text-align: left;
+    }
+    .error-code {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff5555;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 10px;
+    }
+    .error-reason {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .no-results {
+      color: #ff5555;
+      margin: 20px;
+      font-style: italic;
+    }
+    
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(30, 30, 30, 0.95);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+      height: 45px;
+      box-sizing: border-box;
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-menu li {
+      margin: 0;
+      padding: 0;
+    }
+    .nav-menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 4px 6px;
+      transition: color 0.3s ease;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    .nav-menu li a:hover {
+      color: #FFD700;
+      text-decoration: underline;
+    }
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-toggle div {
+      width: 20px;
+      height: 2px;
+      background: white;
+      margin: 3px 0;
+    }
+    
+    /* Main content */
+    .main-content {
+      padding-top: 55px;
+    }
+    
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        background: rgba(30, 30, 30, 0.95);
+        padding: 8px 0;
+        text-align: center;
+      }
+      .nav-menu.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+      .search-container {
+        flex-direction: column;
+      }
+      input, select, button {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="https://core.startab.it/">StartAB.it</a></li>
+      <li><a href="https://wesleystedman.github.io/ironmon-moveset-coverage-calc/">Coverage Calculator</a></li>
+      <li><a href="index.html">Tool Uova</a></li>
+      <li><a href="evoluzioni.html">Evoluzioni</a></li>
+	  <li><a href="ban.html">Ban</a></li>
+	  <li><a href="https://www.canva.com/design/DAGg-PsdqvM/e9vbIPlu0fJse0CxDWLjNA/view?utm_content=DAGg-PsdqvM&utm_campaign=designshare&utm_medium=link&utm_source=viewer">Guida</a></li>
+	  <li><a href="https://www.canva.com/design/DAGQwO-JQrI/TTMsurbjR2oP8yBNl1K1vw/view?utm_content=DAGQwO-JQrI&utm_campaign=designshare&utm_medium=link&utm_source=viewer">FAQ</a></li>
+	  <li><a href="errori.html">Ricerca Errori</a></li>
+      <li><a href="https://docs.google.com/spreadsheets/d/104zALQ-vnMOwINoSa1-Tu1MAWVjq_tLnXikVgl3sAf0/edit?usp=sharing">Doc. Preferiti 🔗</a></li>
+    </ul>
+  </nav>
+  
+  <div class="main-content">
+    <div class="container">
+      <h1>Ricerca Errori StartAB</h1>
+      <p>Cerca informazioni sui codici di errore che hai riscontrato</p>
+      
+      <div class="search-options">
+        <div class="search-container">
+          <input type="number" id="errorCode" placeholder="Inserisci codice errore">
+          <button id="searchButton">Cerca</button>
+        </div>
+      </div>
+      
+      <div id="resultContainer" class="result-container" style="display: none;">
+        <div id="errorFound" style="display: none;">
+          <div class="error-code">Codice errore: <span id="resultErrorCode"></span></div>
+          <div class="error-reason" id="resultErrorReason"></div>
+        </div>
+        <div id="errorNotFound" class="no-results" style="display: none;">
+          Nessun errore trovato con questo codice.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let errorsData = [];
+    
+    async function loadErrorsData() {
+      try {
+        const response = await fetch('StartAB_errors.json');
+        errorsData = await response.json();
+      } catch (error) {
+        console.error('Errore nel caricamento JSON degli errori:', error);
+        errorsData = []; // Array vuoto in caso di errore
+      }
+    }
+    
+    function findErrorByCode(code) {
+      return errorsData.find(err => err.error === parseInt(code));
+    }
+    
+    function displayErrorResult(errorData) {
+      const resultContainer = document.getElementById('resultContainer');
+      const errorFound = document.getElementById('errorFound');
+      const errorNotFound = document.getElementById('errorNotFound');
+      
+      // Mostra il container dei risultati
+      resultContainer.style.display = 'block';
+      
+      if (errorData) {
+        // Mostra i dettagli dell'errore trovato
+        document.getElementById('resultErrorCode').textContent = errorData.error;
+        document.getElementById('resultErrorReason').textContent = errorData.reason;
+        errorFound.style.display = 'block';
+        errorNotFound.style.display = 'none';
+      } else {
+        // Mostra il messaggio di errore non trovato
+        errorFound.style.display = 'none';
+        errorNotFound.style.display = 'block';
+      }
+    }
+    
+    $(document).ready(function() {
+      loadErrorsData();
+      
+      // Event handler per il pulsante di ricerca
+      $('#searchButton').on('click', function() {
+        const code = $('#errorCode').val().trim();
+        if (code) {
+          const errorData = findErrorByCode(parseInt(code));
+          displayErrorResult(errorData);
+        }
+      });
+      
+      // Event handler per il tasto Invio nell'input
+      $('#errorCode').on('keypress', function(e) {
+        if (e.which === 13) { // Codice tasto Enter
+          $('#searchButton').click();
+        }
+      });
+    });
+    
+    function toggleMenu() {
+      document.querySelector(".nav-menu").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
