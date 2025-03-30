@@ -1,0 +1,22 @@
+[
+  {
+    "error": 404,
+    "reason": "La pagina non esiste o è stata spostata"
+  },
+  {
+    "error": 599,
+    "reason": "Per motivi di sicurezza il sito al momento non accetta connessioni dall'estero. Puoi usare una VPN"
+  },
+  {
+    "error": 403,
+    "reason": "Pulisci i cookie del sito e riprova. Se non funziona prova a cambiare browser o riavviare il router."
+  },
+  {
+    "error": 500,
+    "reason": "Verifica la tua mail di Twitch"
+  },
+  {
+    "error": 419,
+    "reason": "Sono state apportate modifiche al sito. Aggiorna la pagina"
+  }
+]
