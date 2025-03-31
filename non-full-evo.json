@@ -2030,7 +2030,55 @@
     },
     {
         "Evolving from": "Eevee",
-        "Level": "",
+        "Level": "Water Stone",
+        "BST": 325,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Evolving from": "Eevee",
+        "Level": "Fire Stone",
+        "BST": 325,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Evolving from": "Eevee",
+        "Level": "Thunder Stone",
+        "BST": 325,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Evolving from": "Eevee",
+        "Level": "Sun Stone",
+        "BST": 325,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Evolving from": "Eevee",
+        "Level": "Moon Stone",
+        "BST": 325,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Evolving from": "Eevee",
+        "Level": "Leaf Stone",
+        "BST": 325,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
+        "Evolving from": "Eevee",
+        "Level": "Ice Stone",
         "BST": 325,
         "Types": [
             "Normale"
