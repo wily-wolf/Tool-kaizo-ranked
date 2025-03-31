@@ -279,7 +279,7 @@
     },
     {
         "Evolving from": "Slowpoke",
-        "Level": 37,
+        "Level": "King's Rock",
         "BST": 315,
         "Types": [
             "Acqua",
@@ -2021,7 +2021,7 @@
     },
     {
         "Evolving from": "Scyther",
-        "Level": "Black Augurite",
+        "Level": "",
         "BST": 500,
         "Types": [
             "Coleottero",
@@ -2030,7 +2030,7 @@
     },
     {
         "Evolving from": "Eevee",
-        "Level": "Stone",
+        "Level": "",
         "BST": 325,
         "Types": [
             "Normale"
@@ -2312,7 +2312,7 @@
     },
     {
         "Evolving from": "Karrablast",
-        "Level": "Trade with Shelmet",
+        "Level": "",
         "BST": 315,
         "Types": [
             "Coleottero"
@@ -2320,7 +2320,7 @@
     },
     {
         "Evolving from": "Shelmet",
-        "Level": "Trade with Karrablast",
+        "Level": "",
         "BST": 305,
         "Types": [
             "Coleottero"
@@ -2393,7 +2393,7 @@
     },
     {
         "Evolving from": "Budew",
-        "Level": "Daytime",
+        "Level": "",
         "BST": 280,
         "Types": [
             "Erba",
@@ -2402,7 +2402,7 @@
     },
     {
         "Evolving from": "Chingling",
-        "Level": "Nighttime",
+        "Level": "",
         "BST": 285,
         "Types": [
             "Psico"
@@ -2418,7 +2418,7 @@
     },
     {
         "Evolving from": "Riolu",
-        "Level": "Daytime",
+        "Level": "",
         "BST": 285,
         "Types": [
             "Lotta"
@@ -2444,7 +2444,7 @@
     },
     {
         "Evolving from": "Lickitung",
-        "Level": "after Rollout learned",
+        "Level": "",
         "BST": 385,
         "Types": [
             "Normale"
@@ -2452,7 +2452,7 @@
     },
     {
         "Evolving from": "Happiny",
-        "Level": "hold Oval Stone",
+        "Level": "",
         "BST": 220,
         "Types": [
             "Normale"
@@ -2460,7 +2460,7 @@
     },
     {
         "Evolving from": "Tangela",
-        "Level": "after Ancient Power learned",
+        "Level": "",
         "BST": 435,
         "Types": [
             "Erba"
@@ -2468,7 +2468,7 @@
     },
     {
         "Evolving from": "Mime-Jr",
-        "Level": "after Mimic learned",
+        "Level": "",
         "BST": 310,
         "Types": [
             "Psico"
@@ -2476,7 +2476,7 @@
     },
     {
         "Evolving from": "Bonsly",
-        "Level": "after Mimic learned",
+        "Level": "",
         "BST": 290,
         "Types": [
             "Roccia"
@@ -2484,7 +2484,7 @@
     },
     {
         "Evolving from": "Aipom",
-        "Level": "after Double Hit learned",
+        "Level": "",
         "BST": 360,
         "Types": [
             "Normale"
@@ -2492,7 +2492,7 @@
     },
     {
         "Evolving from": "Yanma",
-        "Level": "after Ancient Power learned",
+        "Level": "",
         "BST": 390,
         "Types": [
             "Coleottero",
@@ -2519,7 +2519,7 @@
     },
     {
         "Evolving from": "Piloswine",
-        "Level": "after Ancient Power learned",
+        "Level": "",
         "BST": 450,
         "Types": [
             "Ghiaccio",
@@ -2528,7 +2528,7 @@
     },
     {
         "Evolving from": "Mantyke",
-        "Level": "with Remoraid in party",
+        "Level": "",
         "BST": 345,
         "Types": [
             "Acqua",
