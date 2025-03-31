@@ -7426,6 +7426,111 @@
     },
     {
         "id": 133,
+        "name": "Eevee (Water Stone)",
+        "bst": 325,
+        "tier": null,
+        "types": [
+            "Acqua"
+        ],
+        "evolutions": {
+            "level": false,
+            "friendship": false,
+            "item": true,
+            "other": false
+        }
+    },
+    {
+        "id": 133,
+        "name": "Eevee (Fire Stone)",
+        "bst": 325,
+        "tier": null,
+        "types": [
+            "Fuoco"
+        ],
+        "evolutions": {
+            "level": false,
+            "friendship": false,
+            "item": true,
+            "other": false
+        }
+    },
+    {
+        "id": 133,
+        "name": "Eevee (Thunder Stone)",
+        "bst": 325,
+        "tier": null,
+        "types": [
+            "Elettro"
+        ],
+        "evolutions": {
+            "level": false,
+            "friendship": false,
+            "item": true,
+            "other": false
+        }
+    },
+    {
+        "id": 133,
+        "name": "Eevee (Shiny Stone)",
+        "bst": 325,
+        "tier": null,
+        "types": [
+            "Psico"
+        ],
+        "evolutions": {
+            "level": false,
+            "friendship": false,
+            "item": true,
+            "other": false
+        }
+    },
+    {
+        "id": 133,
+        "name": "Eevee (Dusk Stone)",
+        "bst": 325,
+        "tier": null,
+        "types": [
+            "Buio"
+        ],
+        "evolutions": {
+            "level": false,
+            "friendship": false,
+            "item": true,
+            "other": false
+        }
+    },
+    {
+        "id": 133,
+        "name": "Eevee (Leaf Stone)",
+        "bst": 325,
+        "tier": null,
+        "types": [
+            "Erba"
+        ],
+        "evolutions": {
+            "level": false,
+            "friendship": false,
+            "item": true,
+            "other": false
+        }
+    },
+    {
+        "id": 133,
+        "name": "Eevee (Ice Stone)",
+        "bst": 325,
+        "tier": null,
+        "types": [
+            "Ghiaccio"
+        ],
+        "evolutions": {
+            "level": false,
+            "friendship": false,
+            "item": true,
+            "other": false
+        }
+    },
+    {
+        "id": 133,
         "name": "Eevee",
         "bst": 325,
         "tier": null,
