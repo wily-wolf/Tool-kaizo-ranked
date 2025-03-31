@@ -111,7 +111,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-	  margin-top: 40px;
+      margin-top: 40px;
     }
     .card {
       background-color: #1e1e1e;
@@ -121,12 +121,13 @@
       text-align: center;
       box-shadow: 0 2px 5px rgba(0,0,0,0.5);
       border: 1px solid #444;
+      cursor: pointer;
     }
     .card img {
       width: 100px;
       height: auto;
     }
-    /* BST styling from index.html */
+    /* BST styling */
     .bst-box {
       padding: 5px 10px;
       border-radius: 5px;
@@ -215,20 +216,75 @@
       padding-top: 25px;
     }
     
-    /* Stile per i radio button */
+    /* Stile label evoluzioni */
     .evolution-type {
       display: flex;
       justify-content: center;
       margin: 20px 0;
-      gap: 20px;
+      gap: 10px;
+      flex-wrap: wrap;
     }
-    .evolution-type label {
+    /* Altezza fissa per garantire l'allineamento verticale */
+    .evolution-type label.token {
       display: inline-flex;
       align-items: center;
       cursor: pointer;
+      user-select: none;
+      height: 40px;
+      padding: 0 20px;
+      border: 2px solid transparent;
+      border-radius: 25px;
+      transition: border-color 0.3s, background-color 0.3s;
+    }
+    .evolution-type label.token:hover {
+      border-color: #555;
     }
     .evolution-type input[type="radio"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #555;
+      border-radius: 50%;
       margin-right: 8px;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    .evolution-type input[type="radio"]:checked {
+      border-color: #FFD700;
+    }
+    .evolution-type input[type="radio"]:checked::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      background-color: #FFD700;
+      border-radius: 50%;
+    }
+    .evolution-type span {
+      font-size: 1rem;
+    }
+    
+    /* Stile per la checkbox "Oggetti Evolutivi" */
+    .object-toggle {
+      display: block;
+      align-items: center;
+      gap: 8px;
+      margin: 20px 0;
+      cursor: pointer;
+      user-select: none;
+    }
+    .object-toggle input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      margin: 0;
     }
     
     @media (max-width: 768px) {
@@ -279,20 +335,29 @@
     <div class="container">
       <h1>Evoluzioni Pokémon</h1>
       
-      <!-- Selector for evolution type -->
+      <!-- Sezione per la modalità evoluzione/oggetti -->
       <div class="evolution-type">
-        <label>
-          <input type="radio" name="evolutionType" value="normal" checked> Evoluzioni Normali
+        <label class="token">
+          <input type="radio" name="evolutionType" value="normal" checked>
+          <span>Evoluzioni Normali</span>
         </label>
-        <label>
-          <input type="radio" name="evolutionType" value="enhanced"> Evoluzioni Potenziate
+        <label class="token">
+          <input type="radio" name="evolutionType" value="enhanced">
+          <span>Evoluzioni Potenziate</span>
         </label>
       </div>
       
-      <label for="pokemonSelect">Seleziona un Pokémon:</label>
+      <!-- Checkbox per la modalità "Oggetti Evolutivi" -->
+      <div class="object-toggle">
+        <input type="checkbox" id="objectToggle">
+        <label for="objectToggle">Oggetti Evolutivi</label>
+      </div>
+      
+      <!-- Select per la ricerca (sarà popolato con Pokémon o con oggetti in base alla modalità) -->
       <select id="pokemonSelect">
         <option value="">-- Seleziona --</option>
       </select>
+      
       <div id="results" class="results"></div>
     </div>
   </div>
@@ -300,7 +365,7 @@
   <script>
     let nonFullEvo = [];
     let pokedex = [];
-    let maxBST = 600; // Default max BST for normal evolutions
+    let maxBST = 600; // Default max BST per evoluzioni normali
 
     async function loadJSONFiles() {
       try {
@@ -308,19 +373,19 @@
         nonFullEvo = await nonFullEvoResponse.json();
         const pokedexResponse = await fetch('pokedex.json');
         pokedex = await pokedexResponse.json();
+        // Popola il select in base allo stato della modalità
         populateSelect();
         
-        // Inizializza Select2 dopo che i dati sono stati caricati
+        // Inizializza Select2 per il select
         $(document).ready(function() {
           $('#pokemonSelect').select2({
-            placeholder: "-- Seleziona un Pokémon --",
+            placeholder: "-- Seleziona --",
             allowClear: true,
             width: '100%',
             theme: "classic",
-            dropdownCssClass: "select2-dropdown-dark" // Classe aggiuntiva per styling
+            dropdownCssClass: "select2-dropdown-dark"
           });
           
-          // Forza lo stile scuro sul dropdown
           $("<style>")
             .prop("type", "text/css")
             .html(`
@@ -332,29 +397,57 @@
             .appendTo("head");
         });
       } catch (error) {
-        console.error('Errore nel caricamento JSON:', error);
+        console.error('Errore nel caricamento dei file JSON:', error);
       }
     }
-
-    function populateSelect() {
-      const select = document.getElementById('pokemonSelect');
-      
-      // Crea un array dei nomi dei Pokémon e ordinalo alfabeticamente
-      const sortedPokemon = nonFullEvo.map(pokemon => pokemon["Evolving from"]).sort();
-      
-      // Popola il select con i nomi ordinati
-      sortedPokemon.forEach(name => {
-        const option = document.createElement('option');
-        option.value = name;
-        option.textContent = name;
-        select.appendChild(option);
-      });
-    }
-
+    
+    // Popola il select in modalità normale (Pokémon) o oggetti evolutivi
+	function populateSelect() {
+		const select = document.getElementById('pokemonSelect');
+		// Distruggi Select2 se è inizializzato
+		if ($('#pokemonSelect').data('select2')) {
+			$('#pokemonSelect').select2('destroy');
+		}
+		// Svuota le opzioni esistenti
+		select.innerHTML = '<option value="">-- Seleziona --</option>';
+		
+		if (document.getElementById('objectToggle').checked) {
+			// Modalità Oggetti Evolutivi: estrai valori distinti non numerici dal campo "Level"
+			const objects = [...new Set(nonFullEvo
+				.filter(p => isNaN(parseInt(p.Level)))
+				.map(p => p.Level))];
+			objects.sort();
+			objects.forEach(obj => {
+				const option = document.createElement('option');
+				option.value = obj;
+				option.textContent = obj;
+				select.appendChild(option);
+			});
+		} else {
+			// Modalità normale: popola con i nomi dei Pokémon (campo "Evolving from")
+			const names = nonFullEvo.map(p => p["Evolving from"]);
+			names.sort();
+			names.forEach(name => {
+				const option = document.createElement('option');
+				option.value = name;
+				option.textContent = name;
+				select.appendChild(option);
+			});
+		}
+		// Reinizializza Select2
+		$('#pokemonSelect').select2({
+			placeholder: "-- Seleziona --",
+			allowClear: true,
+			width: '100%',
+			theme: "classic",
+			dropdownCssClass: "select2-dropdown-dark"
+		});
+	}
+    
     function getPokemonDataByName(name) {
       return pokedex.find(p => p.name.toLowerCase() === name.toLowerCase());
     }
-
+    
     function shareAtLeastOneType(types1, types2) {
       return types1.some(type => types2.includes(type));
     }
@@ -368,89 +461,127 @@
       if (bst >= 380) return "bst-5";
       return "bst-6";
     }
-
-    $(document).ready(function() {
-      // Event handler per il cambio di tipo evoluzione
-      $('input[name="evolutionType"]').on('change', function() {
-        maxBST = $(this).val() === 'normal' ? 600 : 680;
-        
-        // Ricarica i risultati se è già selezionato un Pokémon
-        if ($('#pokemonSelect').val()) {
-          updateResults();
-        }
-      });
-      
-      // Usa event handler di jQuery per Select2
-      $('#pokemonSelect').on('change', function() {
-        updateResults();
-      });
-      
-      function updateResults() {
+    
+	function updateResults() {
+		const resultsContainer = document.getElementById('results');
+		resultsContainer.innerHTML = '';
+		
+		if (document.getElementById('objectToggle').checked) {
+			const selectedObject = $('#pokemonSelect').val();
+			if (!selectedObject) return;
+			const matchingRecords = nonFullEvo.filter(p => p.Level === selectedObject);
+			if (matchingRecords.length === 0) {
+				resultsContainer.textContent = 'Nessun Pokémon trovato per l\'oggetto selezionato.';
+				return;
+			}
+			matchingRecords.forEach(record => {
+				const pokemonData = getPokemonDataByName(record["Evolving from"]);
+				if (!pokemonData) return;
+				
+				const card = document.createElement('div');
+				card.className = 'card';
+				
+				const img = document.createElement('img');
+				img.src = `https://img.pokemondb.net/sprites/black-white/normal/${pokemonData.name.toLowerCase()}.png`;
+				img.alt = pokemonData.name;
+				card.appendChild(img);
+				
+				const nameEl = document.createElement('p');
+				nameEl.innerHTML = `<strong>${pokemonData.name}</strong>`;
+				card.appendChild(nameEl);
+				
+				const typesEl = document.createElement('p');
+				typesEl.textContent = pokemonData.types.join(' / ');
+				card.appendChild(typesEl);
+				
+				card.addEventListener('click', () => {
+					document.getElementById('objectToggle').checked = false;
+					populateSelect();
+					$('#pokemonSelect').val(record["Evolving from"]).trigger('change');
+				});
+				
+				resultsContainer.appendChild(card);
+			});
+		} else {
         const selectedName = $('#pokemonSelect').val();
-        const resultsContainer = document.getElementById('results');
-        resultsContainer.innerHTML = '';
-
-        if (!selectedName) return;
-
+        if(!selectedName) return;
+        
         const basePokemon = nonFullEvo.find(p => p["Evolving from"] === selectedName);
         const basePokemonPokedex = getPokemonDataByName(selectedName);
-
-        if (!basePokemon || !basePokemonPokedex) {
+        if(!basePokemon || !basePokemonPokedex) {
           resultsContainer.textContent = 'Dati non trovati per il Pokémon selezionato.';
           return;
         }
-
+        
         const candidates = pokedex.filter(p => 
-          p.bst > basePokemon.BST && 
-          p.bst <= maxBST && // Usa il valore maxBST corrente
+          p.bst > basePokemon.BST &&
+          p.bst <= maxBST &&
           shareAtLeastOneType(p.types, basePokemon.Types)
         );
-
-        if (candidates.length === 0) {
+        if(candidates.length === 0) {
           resultsContainer.textContent = 'Nessuna evoluzione trovata.';
           return;
         }
-
+        
         const probability = (1 / candidates.length).toFixed(3);
-
         candidates.forEach(candidate => {
           const card = document.createElement('div');
           card.className = 'card';
-
+          
           const img = document.createElement('img');
           img.src = `https://img.pokemondb.net/sprites/black-white/normal/${candidate.name.toLowerCase()}.png`;
           img.alt = candidate.name;
           card.appendChild(img);
-
+          
           const nameEl = document.createElement('p');
           nameEl.innerHTML = `<strong>${candidate.name}</strong>`;
           card.appendChild(nameEl);
-
-          // BST con classe colorata
+          
           const bstEl = document.createElement('div');
           const bstSpan = document.createElement('span');
           bstSpan.className = `bst-box ${getBstClass(candidate.bst)}`;
           bstSpan.textContent = candidate.bst;
           bstEl.appendChild(bstSpan);
           card.appendChild(bstEl);
-
+          
           const typesEl = document.createElement('p');
-          typesEl.textContent = `${candidate.types.join(' / ')}`;
+          typesEl.textContent = candidate.types.join(' / ');
           card.appendChild(typesEl);
-
+          
           const probEl = document.createElement('p');
           probEl.textContent = `${(probability * 100).toFixed(1)}%`;
           card.appendChild(probEl);
-
+          
           resultsContainer.appendChild(card);
         });
       }
+    }
+    
+    $(document).ready(function() {
+      // Gestione della checkbox "Oggetti Evolutivi"
+      $('#objectToggle').on('change', function() {
+        populateSelect();
+        $('#results').html('');
+      });
+      
+      // Evento per i radio button delle evoluzioni (normali o potenziate)
+      $('input[name="evolutionType"]').on('change', function() {
+        maxBST = $(this).val() === 'normal' ? 600 : 680;
+        if(!$('#objectToggle').prop('checked') && $('#pokemonSelect').val()) {
+          updateResults();
+        }
+      });
+      
+      // Evento sul select (sia per modalità Pokémon che per oggetti evolutivi)
+      $('#pokemonSelect').on('change', function() {
+        updateResults();
+      });
     });
     
     function toggleMenu() {
       document.querySelector(".nav-menu").classList.toggle("active");
     }
-
+    
     loadJSONFiles();
   </script>
 </body>
