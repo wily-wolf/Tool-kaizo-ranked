@@ -2029,7 +2029,7 @@
         ]
     },
     {
-        "Evolving from": "Eevee",
+        "Evolving from": "Eevee (Water Stone)",
         "Level": "Water Stone",
         "BST": 325,
         "Types": [
@@ -2037,7 +2037,7 @@
         ]
     },
     {
-        "Evolving from": "Eevee",
+        "Evolving from": "Eevee (Fire Stone)",
         "Level": "Fire Stone",
         "BST": 325,
         "Types": [
@@ -2045,7 +2045,7 @@
         ]
     },
     {
-        "Evolving from": "Eevee",
+        "Evolving from": "Eevee (Thunder Stone)",
         "Level": "Thunder Stone",
         "BST": 325,
         "Types": [
@@ -2053,7 +2053,7 @@
         ]
     },
     {
-        "Evolving from": "Eevee",
+        "Evolving from": "Eevee (Shiny Stone)",
         "Level": "Shiny Stone",
         "BST": 325,
         "Types": [
@@ -2061,7 +2061,7 @@
         ]
     },
     {
-        "Evolving from": "Eevee",
+        "Evolving from": "Eevee (Dusk Stone)",
         "Level": "Dusk Stone",
         "BST": 325,
         "Types": [
@@ -2069,7 +2069,7 @@
         ]
     },
     {
-        "Evolving from": "Eevee",
+        "Evolving from": "Eevee (Leaf Stone)",
         "Level": "Leaf Stone",
         "BST": 325,
         "Types": [
@@ -2077,19 +2077,11 @@
         ]
     },
     {
-        "Evolving from": "Eevee",
+        "Evolving from": "Eevee (Ice Stone)",
         "Level": "Ice Stone",
         "BST": 325,
         "Types": [
             "Ghiaccio"
-        ]
-    },
-    {
-        "Evolving from": "Eevee",
-        "Level": "Dusk Stone",
-        "BST": 325,
-        "Types": [
-            "Normale"
         ]
     },
     {
