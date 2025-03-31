@@ -2180,7 +2180,7 @@
     },
     {
         "Evolving from": "Kadabra",
-        "Level": 0,
+        "Level": "Linking Cord",
         "BST": 400,
         "Types": [
             "Psico"
@@ -2188,7 +2188,7 @@
     },
     {
         "Evolving from": "Machoke",
-        "Level": 0,
+        "Level": "Linking Cord",
         "BST": 405,
         "Types": [
             "Lotta"
@@ -2196,7 +2196,7 @@
     },
     {
         "Evolving from": "Graveler",
-        "Level": 0,
+        "Level": "Linking Cord",
         "BST": 390,
         "Types": [
             "Roccia",
@@ -2205,7 +2205,7 @@
     },
     {
         "Evolving from": "Haunter",
-        "Level": 0,
+        "Level": "Linking Cord",
         "BST": 405,
         "Types": [
             "Spettro",
@@ -2296,7 +2296,7 @@
     },
     {
         "Evolving from": "Boldore",
-        "Level": 0,
+        "Level": "Linking Cord",
         "BST": 390,
         "Types": [
             "Roccia"
@@ -2304,7 +2304,7 @@
     },
     {
         "Evolving from": "Gurdurr",
-        "Level": 0,
+        "Level": "Linking Cord",
         "BST": 405,
         "Types": [
             "Lotta"
