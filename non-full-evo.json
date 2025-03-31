@@ -2085,6 +2085,14 @@
         ]
     },
     {
+        "Evolving from": "Eevee",
+        "Level": "Dusk Stone",
+        "BST": 325,
+        "Types": [
+            "Normale"
+        ]
+    },
+    {
         "Evolving from": "Togetic",
         "Level": "Shiny Stone",
         "BST": 405,
