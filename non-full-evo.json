@@ -2033,7 +2033,7 @@
         "Level": "Water Stone",
         "BST": 325,
         "Types": [
-            "Normale"
+            "Acqua"
         ]
     },
     {
@@ -2041,7 +2041,7 @@
         "Level": "Fire Stone",
         "BST": 325,
         "Types": [
-            "Normale"
+            "Fuoco"
         ]
     },
     {
@@ -2049,23 +2049,23 @@
         "Level": "Thunder Stone",
         "BST": 325,
         "Types": [
-            "Normale"
+            "Elettro"
         ]
     },
     {
         "Evolving from": "Eevee",
-        "Level": "Sun Stone",
+        "Level": "Shiny Stone",
         "BST": 325,
         "Types": [
-            "Normale"
+            "Psico"
         ]
     },
     {
         "Evolving from": "Eevee",
-        "Level": "Moon Stone",
+        "Level": "Dusk Stone",
         "BST": 325,
         "Types": [
-            "Normale"
+            "Buio"
         ]
     },
     {
@@ -2073,7 +2073,7 @@
         "Level": "Leaf Stone",
         "BST": 325,
         "Types": [
-            "Normale"
+            "Erba"
         ]
     },
     {
@@ -2081,7 +2081,7 @@
         "Level": "Ice Stone",
         "BST": 325,
         "Types": [
-            "Normale"
+            "Ghiaccio"
         ]
     },
     {
