@@ -542,6 +542,7 @@
             document.getElementById('objectToggle').checked = false;
             populateSelect();
             $('#pokemonSelect').val(record["Evolving from"]).trigger('change');
+            $('html, body').animate({ scrollTop: 0 }, 500);
           });
           
           resultsContainer.appendChild(card);
@@ -604,6 +605,7 @@
             if (isInDropdown) {
               // Seleziona questo Pokémon nel menu a tendina
               $('#pokemonSelect').val(candidate.name).trigger('change');
+              $('html, body').animate({ scrollTop: 0 }, 500);
             }
           });
           
