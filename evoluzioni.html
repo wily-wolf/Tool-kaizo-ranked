@@ -122,6 +122,12 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.5);
       border: 1px solid #444;
       cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    /* Effetto hover per le card */
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
     }
     .card img {
       width: 100px;
@@ -287,6 +293,29 @@
       margin: 0;
     }
     
+    /* Pulsante "Torna Su" */
+	#backToTop {
+	  position: fixed;
+	  bottom: 20px;
+	  right: 20px;
+	  background-color: #FFD700;
+	  color: #121212;
+	  border: none;
+	  padding: 10px 15px;
+	  border-radius: 5px;
+	  cursor: pointer;
+	  opacity: 0;
+	  visibility: hidden;
+	  font-weight: bold;
+	  transition: opacity 0.3s ease, visibility 0.3s ease;
+	  z-index: 1001;
+	}
+
+	#backToTop.show {
+	  opacity: 1;
+	  visibility: visible;
+	}
+    
     @media (max-width: 768px) {
       .nav-menu {
         display: none;
@@ -361,6 +390,9 @@
       <div id="results" class="results"></div>
     </div>
   </div>
+
+  <!-- Pulsante "Torna Su" -->
+  <button id="backToTop">Torna Su</button>
 
   <script>
     // Funzione che restituisce l'URL corretto per lo sprite del Pokémon
@@ -586,6 +618,15 @@
       }
     }
     
+    // Funzione per mostrare/nascondere il pulsante "Torna Su"
+	function checkScroll() {
+	  if ($(window).scrollTop() > 300) {
+		$('#backToTop').addClass('show');
+	  } else {
+		$('#backToTop').removeClass('show');
+	  }
+	}
+    
     $(document).ready(function() {
       // Carica i file JSON al caricamento della pagina
       loadJSONFiles();
@@ -607,6 +648,14 @@
       // Evento sul select (sia per modalità Pokémon che per oggetti evolutivi)
       $('#pokemonSelect').on('change', function() {
         updateResults();
+      });
+      
+      // Controlla lo scroll della finestra
+      $(window).on('scroll', checkScroll);
+      
+      // Click sul pulsante "Torna Su": scrolla in alto in maniera animata
+      $('#backToTop').on('click', function() {
+        $('html, body').animate({ scrollTop: 0 }, 500);
       });
     });
     
