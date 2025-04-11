@@ -51,16 +51,15 @@
       gap: 12px;
       margin: 0;
       padding: 0;
-      align-items: center; /* Assicura allineamento verticale di tutti gli elementi */
-      height: 100%; /* Assicura che il menu occupi tutta l'altezza della navbar */
+      align-items: center; 
     }
     
     .nav-menu li {
       margin: 0;
       padding: 0;
-      display: flex; /* Aggiungo flex per allineare uniformemente */
-      align-items: center; /* Centra verticalmente il contenuto di ogni li */
-      height: 100%; /* Assicura che ogni elemento occupi l'altezza completa */
+      display: flex; 
+      align-items: center; 
+      height: 100%; 
     }
     
     .nav-menu li {
@@ -134,7 +133,7 @@
     
     input[type="search"] {
       width: 100%;
-      max-width: 310px; /* Aumentato di 10px come richiesto */
+      max-width: 310px; 
       padding: 12px 16px;
       font-size: 16px;
       background-color: #2a2a2a;
@@ -255,9 +254,9 @@
         padding-left: 50%;
         border: none;
         border-bottom: 1px solid #3a3a3a;
-        min-height: 44px; /* Aggiunto per migliorare l'allineamento verticale */
+        min-height: 44px; 
         display: flex;
-        align-items: center; /* Centratura verticale */
+        align-items: center; 
       }
       
       td:before {
@@ -275,7 +274,7 @@
       }
     }
 	
-	/* Effetto Matrix per la voce "NUOVO Uovo Matrix!" */
+	/* Effetto Matrix */
 	.nav-menu li.matrix-egg a {
 	  background-color: black;
 	  color: #00ff00;
@@ -325,7 +324,7 @@
     
     <div class="card-section">
       <div class="search-container">
-        <input type="search" id="searchInput" placeholder="Cerca una mossa per nome o per ID...">
+        <input type="search" id="searchInput" autocomplete="off" placeholder="Cerca una mossa per nome o per ID">
       </div>
       
       <table id="movesTable">
