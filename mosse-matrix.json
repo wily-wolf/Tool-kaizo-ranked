@@ -196,10 +196,6 @@
         "number": 49
     },
     {
-        "name": "SONICBOOM",
-        "number": 49
-    },
-    {
         "name": "DISABLE",
         "number": 50
     },
@@ -241,10 +237,6 @@
     },
     {
         "name": "BUBBLE_BEAM",
-        "number": 61
-    },
-    {
-        "name": "BUBBLEBEAM",
         "number": 61
     },
     {
@@ -308,10 +300,6 @@
         "number": 76
     },
     {
-        "name": "SOLARBEAM",
-        "number": 76
-    },
-    {
         "name": "POISON_POWDER",
         "number": 77
     },
@@ -341,10 +329,6 @@
     },
     {
         "name": "THUNDER_SHOCK",
-        "number": 84
-    },
-    {
-        "name": "THUNDERSHOCK",
         "number": 84
     },
     {
