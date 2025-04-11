@@ -141,17 +141,21 @@
             white-space: nowrap;
         }
         /* Navbar specific list styling */
-        .nav-menu {
-            list-style: none;
-            display: flex;
-            gap: 12px;
-            margin: 0;
-            padding: 0;
-        }
-        .nav-menu li {
-            margin: 0;
-            padding: 0;
-        }
+		.nav-menu {
+		  list-style: none;
+		  display: flex;
+		  gap: 12px;
+		  margin: 0;
+		  padding: 0;
+		  align-items: center; 
+		}
+		.nav-menu li {
+		  margin: 0;
+		  padding: 0;
+		  display: flex; 
+		  align-items: center; 
+		  height: 100%; 
+		}
 
         .nav-menu li a {
             color: white;
@@ -236,7 +240,27 @@
 	.nav-menu li.tracker a {
 	  animation: backgroundPulse 2s infinite;
 	}
-	    
+	 
+	/* Effetto Matrix */
+	.nav-menu li.matrix-egg a {
+	  background-color: black;
+	  color: #00ff00;
+	  padding: 4px 8px;
+	  border-radius: 5px;
+	  font-weight: bold;
+	  font-family: 'Courier New', monospace;
+	  box-shadow: 0 0 8px #00ff00;
+	  animation: matrixGlow 1.5s infinite alternate, matrixType 3s steps(20, end) infinite;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  display: inline-block;
+	}
+
+	@keyframes matrixGlow {
+	  0% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; }
+	  100% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
+	}
+		 
     </style>
 </head>
 <body>
@@ -252,6 +276,7 @@
       <li><a href="https://core.startab.it/">StartAB.it</a></li>
       <li><a href="https://wesleystedman.github.io/ironmon-moveset-coverage-calc/">Coverage Calculator</a></li>
       <li><a href="index.html">Tool Uova</a></li>
+	  <li class="matrix-egg"><a href="matrix.html">Uovo Matrix</a></li>
       <li><a href="evoluzioni.html">Evoluzioni</a></li>
       <li><a href="ban.html">Ban</a></li>
       <li class="tracker"><a href="tracker.html">NUOVO Tracker!</a></li>
