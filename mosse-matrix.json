@@ -1,0 +1,2290 @@
+[
+    {
+        "name": "NONE",
+        "number": 0
+    },
+    {
+        "name": "POUND",
+        "number": 1
+    },
+    {
+        "name": "KARATE_CHOP", 
+        "number": 2
+    },
+    {
+        "name": "DOUBLE_SLAP",
+        "number": 3
+    },
+    {
+        "name": "COMET_PUNCH",
+        "number": 4
+    },
+    {
+        "name": "MEGA_PUNCH",
+        "number": 5
+    },
+    {
+        "name": "PAY_DAY",
+        "number": 6
+    },
+    {
+        "name": "FIRE_PUNCH",
+        "number": 7
+    },
+    {
+        "name": "ICE_PUNCH",
+        "number": 8
+    },
+    {
+        "name": "THUNDER_PUNCH",
+        "number": 9
+    },
+    {
+        "name": "SCRATCH",
+        "number": 10
+    },
+    {
+        "name": "VISE_GRIP",
+        "number": 11
+    },
+    {
+        "name": "GUILLOTINE",
+        "number": 12
+    },
+    {
+        "name": "RAZOR_WIND",
+        "number": 13
+    },
+    {
+        "name": "SWORDS_DANCE",
+        "number": 14
+    },
+    {
+        "name": "GUST",
+        "number": 16
+    },
+    {
+        "name": "WING_ATTACK",
+        "number": 17
+    },
+    {
+        "name": "WHIRLWIND",
+        "number": 18
+    },
+    {
+        "name": "FLY",
+        "number": 19
+    },
+    {
+        "name": "BIND",
+        "number": 20
+    },
+    {
+        "name": "SLAM",
+        "number": 21
+    },
+    {
+        "name": "VINE_WHIP",
+        "number": 22
+    },
+    {
+        "name": "STOMP",
+        "number": 23
+    },
+    {
+        "name": "DOUBLE_KICK",
+        "number": 24
+    },
+    {
+        "name": "MEGA_KICK",
+        "number": 25
+    },
+    {
+        "name": "JUMP_KICK",
+        "number": 26
+    },
+    {
+        "name": "ROLLING_KICK",
+        "number": 27
+    },
+    {
+        "name": "SAND_ATTACK",
+        "number": 28
+    },
+    {
+        "name": "HEADBUTT",
+        "number": 29
+    },
+    {
+        "name": "HORN_ATTACK",
+        "number": 30
+    },
+    {
+        "name": "FURY_ATTACK",
+        "number": 31
+    },
+    {
+        "name": "HORN_DRILL",
+        "number": 32
+    },
+    {
+        "name": "TACKLE",
+        "number": 33
+    },
+    {
+        "name": "BODY_SLAM",
+        "number": 34
+    },
+    {
+        "name": "WRAP",
+        "number": 35
+    },
+    {
+        "name": "TAKE_DOWN",
+        "number": 36
+    },
+    {
+        "name": "THRASH",
+        "number": 37
+    },
+    {
+        "name": "DOUBLE_EDGE",
+        "number": 38
+    },
+    {
+        "name": "TAIL_WHIP",
+        "number": 39
+    },
+    {
+        "name": "POISON_STING",
+        "number": 40
+    },
+    {
+        "name": "TWINEEDLE",
+        "number": 41
+    },
+    {
+        "name": "PIN_MISSILE",
+        "number": 42
+    },
+    {
+        "name": "LEER",
+        "number": 43
+    },
+    {
+        "name": "BITE",
+        "number": 44
+    },
+    {
+        "name": "GROWL",
+        "number": 45
+    },
+    {
+        "name": "ROAR",
+        "number": 46
+    },
+    {
+        "name": "SING",
+        "number": 47
+    },
+    {
+        "name": "SUPERSONIC",
+        "number": 48
+    },
+    {
+        "name": "SONIC_BOOM",
+        "number": 49
+    },
+    {
+        "name": "SONICBOOM",
+        "number": 49
+    },
+    {
+        "name": "DISABLE",
+        "number": 50
+    },
+    {
+        "name": "ACID",
+        "number": 51
+    },
+    {
+        "name": "EMBER",
+        "number": 52
+    },
+    {
+        "name": "FLAMETHROWER",
+        "number": 53
+    },
+    {
+        "name": "MIST",
+        "number": 54
+    },
+    {
+        "name": "WATER_GUN",
+        "number": 55
+    },
+    {
+        "name": "HYDRO_PUMP",
+        "number": 56
+    },
+    {
+        "name": "ICE_BEAM",
+        "number": 58
+    },
+    {
+        "name": "BLIZZARD",
+        "number": 59
+    },
+    {
+        "name": "PSYBEAM",
+        "number": 60
+    },
+    {
+        "name": "BUBBLE_BEAM",
+        "number": 61
+    },
+    {
+        "name": "BUBBLEBEAM",
+        "number": 61
+    },
+    {
+        "name": "AURORA_BEAM",
+        "number": 62
+    },
+    {
+        "name": "HYPER_BEAM",
+        "number": 63
+    },
+    {
+        "name": "PECK",
+        "number": 64
+    },
+    {
+        "name": "DRILL_PECK",
+        "number": 65
+    },
+    {
+        "name": "SUBMISSION",
+        "number": 66
+    },
+    {
+        "name": "LOW_KICK",
+        "number": 67
+    },
+    {
+        "name": "COUNTER",
+        "number": 68
+    },
+    {
+        "name": "SEISMIC_TOSS",
+        "number": 69
+    },
+    {
+        "name": "STRENGTH",
+        "number": 70
+    },
+    {
+        "name": "ABSORB",
+        "number": 71
+    },
+    {
+        "name": "MEGA_DRAIN",
+        "number": 72
+    },
+    {
+        "name": "LEECH_SEED",
+        "number": 73
+    },
+    {
+        "name": "GROWTH",
+        "number": 74
+    },
+    {
+        "name": "RAZOR_LEAF",
+        "number": 75
+    },
+    {
+        "name": "SOLAR_BEAM",
+        "number": 76
+    },
+    {
+        "name": "SOLARBEAM",
+        "number": 76
+    },
+    {
+        "name": "POISON_POWDER",
+        "number": 77
+    },
+    {
+        "name": "STUN_SPORE",
+        "number": 78
+    },
+    {
+        "name": "SLEEP_POWDER",
+        "number": 79
+    },
+    {
+        "name": "PETAL_DANCE",
+        "number": 80
+    },
+    {
+        "name": "STRING_SHOT",
+        "number": 81
+    },
+    {
+        "name": "DRAGON_RAGE",
+        "number": 82
+    },
+    {
+        "name": "FIRE_SPIN",
+        "number": 83
+    },
+    {
+        "name": "THUNDER_SHOCK",
+        "number": 84
+    },
+    {
+        "name": "THUNDERSHOCK",
+        "number": 84
+    },
+    {
+        "name": "THUNDERBOLT",
+        "number": 85
+    },
+    {
+        "name": "THUNDER_WAVE",
+        "number": 86
+    },
+    {
+        "name": "THUNDER",
+        "number": 87
+    },
+    {
+        "name": "ROCK_THROW",
+        "number": 88
+    },
+    {
+        "name": "EARTHQUAKE",
+        "number": 89
+    },
+    {
+        "name": "FISSURE",
+        "number": 90
+    },
+    {
+        "name": "DIG",
+        "number": 91
+    },
+    {
+        "name": "TOXIC",
+        "number": 92
+    },
+    {
+        "name": "CONFUSION",
+        "number": 93
+    },
+    {
+        "name": "PSYCHIC",
+        "number": 94
+    },
+    {
+        "name": "HYPNOSIS",
+        "number": 95
+    },
+    {
+        "name": "MEDITATE",
+        "number": 96
+    },
+    {
+        "name": "AGILITY",
+        "number": 97
+    },
+    {
+        "name": "QUICK_ATTACK",
+        "number": 98
+    },
+    {
+        "name": "RAGE",
+        "number": 99
+    },
+    {
+        "name": "TELEPORT",
+        "number": 100
+    },
+    {
+        "name": "NIGHT_SHADE",
+        "number": 101
+    },
+    {
+        "name": "MIMIC",
+        "number": 102
+    },
+    {
+        "name": "SCREECH",
+        "number": 103
+    },
+    {
+        "name": "DOUBLE_TEAM",
+        "number": 104
+    },
+    {
+        "name": "RECOVER",
+        "number": 105
+    },
+    {
+        "name": "HARDEN",
+        "number": 106
+    },
+    {
+        "name": "MINIMIZE",
+        "number": 107
+    },
+    {
+        "name": "SMOKESCREEN",
+        "number": 108
+    },
+    {
+        "name": "CONFUSE_RAY",
+        "number": 109
+    },
+    {
+        "name": "WITHDRAW",
+        "number": 110
+    },
+    {
+        "name": "DEFENSE_CURL",
+        "number": 111
+    },
+    {
+        "name": "BARRIER",
+        "number": 112
+    },
+    {
+        "name": "LIGHT_SCREEN",
+        "number": 113
+    },
+    {
+        "name": "HAZE",
+        "number": 114
+    },
+    {
+        "name": "REFLECT",
+        "number": 115
+    },
+    {
+        "name": "FOCUS_ENERGY",
+        "number": 116
+    },
+    {
+        "name": "BIDE",
+        "number": 117
+    },
+    {
+        "name": "METRONOME",
+        "number": 118
+    },
+    {
+        "name": "MIRROR_MOVE",
+        "number": 119
+    },
+    {
+        "name": "SELF_DESTRUCT",
+        "number": 120
+    },
+    {
+        "name": "SELFDESTRUCT",
+        "number": 120
+    },
+    {
+        "name": "EGG_BOMB",
+        "number": 121
+    },
+    {
+        "name": "LICK",
+        "number": 122
+    },
+    {
+        "name": "SMOG",
+        "number": 123
+    },
+    {
+        "name": "SLUDGE",
+        "number": 124
+    },
+    {
+        "name": "BONE_CLUB",
+        "number": 125
+    },
+    {
+        "name": "FIRE_BLAST",
+        "number": 126
+    },
+    {
+        "name": "WATERFALL",
+        "number": 127
+    },
+    {
+        "name": "CLAMP",
+        "number": 128
+    },
+    {
+        "name": "SWIFT",
+        "number": 129
+    },
+    {
+        "name": "SKULL_BASH",
+        "number": 130
+    },
+    {
+        "name": "SPIKE_CANNON",
+        "number": 131
+    },
+    {
+        "name": "CONSTRICT",
+        "number": 132
+    },
+    {
+        "name": "AMNESIA",
+        "number": 133
+    },
+    {
+        "name": "KINESIS",
+        "number": 134
+    },
+    {
+        "name": "SOFT_BOILED",
+        "number": 135
+    },
+    {
+        "name": "SOFTBOILED",
+        "number": 135
+    },
+    {
+        "name": "HIGH_JUMP_KICK",
+        "number": 136
+    },
+    {
+        "name": "HI_JUMP_KICK",
+        "number": 136
+    },
+    {
+        "name": "GLARE",
+        "number": 137
+    },
+    {
+        "name": "DREAM_EATER",
+        "number": 138
+    },
+    {
+        "name": "POISON_GAS",
+        "number": 139
+    },
+    {
+        "name": "BARRAGE",
+        "number": 140
+    },
+    {
+        "name": "LEECH_LIFE",
+        "number": 141
+    },
+    {
+        "name": "LOVELY_KISS",
+        "number": 142
+    },
+    {
+        "name": "SKY_ATTACK",
+        "number": 143
+    },
+    {
+        "name": "TRANSFORM",
+        "number": 144
+    },
+    {
+        "name": "BUBBLE",
+        "number": 145
+    },
+    {
+        "name": "DIZZY_PUNCH",
+        "number": 146
+    },
+    {
+        "name": "SPORE",
+        "number": 147
+    },
+    {
+        "name": "FLASH",
+        "number": 148
+    },
+    {
+        "name": "PSYWAVE",
+        "number": 149
+    },
+    {
+        "name": "SPLASH",
+        "number": 150
+    },
+    {
+        "name": "ACID_ARMOR",
+        "number": 151
+    },
+    {
+        "name": "CRABHAMMER",
+        "number": 152
+    },
+    {
+        "name": "EXPLOSION",
+        "number": 153
+    },
+    {
+        "name": "FURY_SWIPES",
+        "number": 154
+    },
+    {
+        "name": "BONEMERANG",
+        "number": 155
+    },
+    {
+        "name": "REST",
+        "number": 156
+    },
+    {
+        "name": "ROCK_SLIDE",
+        "number": 157
+    },
+    {
+        "name": "HYPER_FANG",
+        "number": 158
+    },
+    {
+        "name": "SHARPEN",
+        "number": 159
+    },
+    {
+        "name": "CONVERSION",
+        "number": 160
+    },
+    {
+        "name": "TRI_ATTACK",
+        "number": 161
+    },
+    {
+        "name": "SUPER_FANG",
+        "number": 162
+    },
+    {
+        "name": "SLASH",
+        "number": 163
+    },
+    {
+        "name": "SUBSTITUTE",
+        "number": 164
+    },
+    {
+        "name": "STRUGGLE",
+        "number": 165
+    },
+    {
+        "name": "SKETCH",
+        "number": 166
+    },
+    {
+        "name": "TRIPLE_KICK",
+        "number": 167
+    },
+    {
+        "name": "THIEF",
+        "number": 168
+    },
+    {
+        "name": "SPIDER_WEB",
+        "number": 169
+    },
+    {
+        "name": "MIND_READER",
+        "number": 170
+    },
+    {
+        "name": "NIGHTMARE",
+        "number": 171
+    },
+    {
+        "name": "FLAME_WHEEL",
+        "number": 172
+    },
+    {
+        "name": "SNORE",
+        "number": 173
+    },
+    {
+        "name": "CURSE",
+        "number": 174
+    },
+    {
+        "name": "FLAIL",
+        "number": 175
+    },
+    {
+        "name": "CONVERSION_2",
+        "number": 176
+    },
+    {
+        "name": "AEROBLAST",
+        "number": 177
+    },
+    {
+        "name": "COTTON_SPORE",
+        "number": 178
+    },
+    {
+        "name": "REVERSAL",
+        "number": 179
+    },
+    {
+        "name": "SPITE",
+        "number": 180
+    },
+    {
+        "name": "POWDER_SNOW",
+        "number": 181
+    },
+    {
+        "name": "PROTECT",
+        "number": 182
+    },
+    {
+        "name": "MACH_PUNCH",
+        "number": 183
+    },
+    {
+        "name": "SCARY_FACE",
+        "number": 184
+    },
+    {
+        "name": "FEINT_ATTACK",
+        "number": 185
+    },
+    {
+        "name": "FAINT_ATTACK",
+        "number": 185
+    },
+    {
+        "name": "SWEET_KISS",
+        "number": 186
+    },
+    {
+        "name": "BELLY_DRUM",
+        "number": 187
+    },
+    {
+        "name": "SLUDGE_BOMB",
+        "number": 188
+    },
+    {
+        "name": "MUD_SLAP",
+        "number": 189
+    },
+    {
+        "name": "OCTAZOOKA",
+        "number": 190
+    },
+    {
+        "name": "SPIKES",
+        "number": 191
+    },
+    {
+        "name": "ZAP_CANNON",
+        "number": 192
+    },
+    {
+        "name": "FORESIGHT",
+        "number": 193
+    },
+    {
+        "name": "DESTINY_BOND",
+        "number": 194
+    },
+    {
+        "name": "PERISH_SONG",
+        "number": 195
+    },
+    {
+        "name": "ICY_WIND",
+        "number": 196
+    },
+    {
+        "name": "DETECT",
+        "number": 197
+    },
+    {
+        "name": "BONE_RUSH",
+        "number": 198
+    },
+    {
+        "name": "LOCK_ON",
+        "number": 199
+    },
+    {
+        "name": "OUTRAGE",
+        "number": 200
+    },
+    {
+        "name": "SANDSTORM",
+        "number": 201
+    },
+    {
+        "name": "GIGA_DRAIN",
+        "number": 202
+    },
+    {
+        "name": "ENDURE",
+        "number": 203
+    },
+    {
+        "name": "CHARM",
+        "number": 204
+    },
+    {
+        "name": "ROLLOUT",
+        "number": 205
+    },
+    {
+        "name": "FALSE_SWIPE",
+        "number": 206
+    },
+    {
+        "name": "SWAGGER",
+        "number": 207
+    },
+    {
+        "name": "MILK_DRINK",
+        "number": 208
+    },
+    {
+        "name": "SPARK",
+        "number": 209
+    },
+    {
+        "name": "FURY_CUTTER",
+        "number": 210
+    },
+    {
+        "name": "STEEL_WING",
+        "number": 211
+    },
+    {
+        "name": "MEAN_LOOK",
+        "number": 212
+    },
+    {
+        "name": "ATTRACT",
+        "number": 213
+    },
+    {
+        "name": "SLEEP_TALK",
+        "number": 214
+    },
+    {
+        "name": "HEAL_BELL",
+        "number": 215
+    },
+    {
+        "name": "RETURN",
+        "number": 216
+    },
+    {
+        "name": "PRESENT",
+        "number": 217
+    },
+    {
+        "name": "FRUSTRATION",
+        "number": 218
+    },
+    {
+        "name": "SAFEGUARD",
+        "number": 219
+    },
+    {
+        "name": "PAIN_SPLIT",
+        "number": 220
+    },
+    {
+        "name": "SACRED_FIRE",
+        "number": 221
+    },
+    {
+        "name": "MAGNITUDE",
+        "number": 222
+    },
+    {
+        "name": "DYNAMIC_PUNCH",
+        "number": 223
+    },
+    {
+        "name": "DYNAMICPUNCH",
+        "number": 223
+    },
+    {
+        "name": "MEGAHORN",
+        "number": 224
+    },
+    {
+        "name": "DRAGON_BREATH",
+        "number": 225
+    },
+    {
+        "name": "DRAGONBREATH",
+        "number": 225
+    },
+    {
+        "name": "BATON_PASS",
+        "number": 226
+    },
+    {
+        "name": "ENCORE",
+        "number": 227
+    },
+    {
+        "name": "PURSUIT",
+        "number": 228
+    },
+    {
+        "name": "RAPID_SPIN",
+        "number": 229
+    },
+    {
+        "name": "SWEET_SCENT",
+        "number": 230
+    },
+    {
+        "name": "IRON_TAIL",
+        "number": 231
+    },
+    {
+        "name": "METAL_CLAW",
+        "number": 232
+    },
+    {
+        "name": "VITAL_THROW",
+        "number": 233
+    },
+    {
+        "name": "MORNING_SUN",
+        "number": 234
+    },
+    {
+        "name": "SYNTHESIS",
+        "number": 235
+    },
+    {
+        "name": "MOONLIGHT",
+        "number": 236
+    },
+    {
+        "name": "HIDDEN_POWER",
+        "number": 237
+    },
+    {
+        "name": "CROSS_CHOP",
+        "number": 238
+    },
+    {
+        "name": "TWISTER",
+        "number": 239
+    },
+    {
+        "name": "RAIN_DANCE",
+        "number": 240
+    },
+    {
+        "name": "SUNNY_DAY",
+        "number": 241
+    },
+    {
+        "name": "CRUNCH",
+        "number": 242
+    },
+    {
+        "name": "MIRROR_COAT",
+        "number": 243
+    },
+    {
+        "name": "PSYCH_UP",
+        "number": 244
+    },
+    {
+        "name": "EXTREME_SPEED",
+        "number": 245
+    },
+    {
+        "name": "EXTREMESPEED",
+        "number": 245
+    },
+    {
+        "name": "ANCIENT_POWER",
+        "number": 246
+    },
+    {
+        "name": "ANCIENTPOWER",
+        "number": 246
+    },
+    {
+        "name": "SHADOW_BALL",
+        "number": 247
+    },
+    {
+        "name": "FUTURE_SIGHT",
+        "number": 248
+    },
+    {
+        "name": "WHIRLPOOL",
+        "number": 250
+    },
+    {
+        "name": "BEAT_UP",
+        "number": 251
+    },
+    {
+        "name": "FAKE_OUT",
+        "number": 252
+    },
+    {
+        "name": "UPROAR",
+        "number": 253
+    },
+    {
+        "name": "STOCKPILE",
+        "number": 254
+    },
+    {
+        "name": "SPIT_UP",
+        "number": 255
+    },
+    {
+        "name": "SWALLOW",
+        "number": 256
+    },
+    {
+        "name": "HEAT_WAVE",
+        "number": 257
+    },
+    {
+        "name": "HAIL",
+        "number": 258
+    },
+    {
+        "name": "TORMENT",
+        "number": 259
+    },
+    {
+        "name": "FLATTER",
+        "number": 260
+    },
+    {
+        "name": "WILL_O_WISP",
+        "number": 261
+    },
+    {
+        "name": "MEMENTO",
+        "number": 262
+    },
+    {
+        "name": "FACADE",
+        "number": 263
+    },
+    {
+        "name": "FOCUS_PUNCH",
+        "number": 264
+    },
+    {
+        "name": "SMELLING_SALTS",
+        "number": 265
+    },
+    {
+        "name": "SMELLINGSALT",
+        "number": 265
+    },
+    {
+        "name": "FOLLOW_ME",
+        "number": 266
+    },
+    {
+        "name": "NATURE_POWER",
+        "number": 267
+    },
+    {
+        "name": "CHARGE",
+        "number": 268
+    },
+    {
+        "name": "TAUNT",
+        "number": 269
+    },
+    {
+        "name": "HELPING_HAND",
+        "number": 270
+    },
+    {
+        "name": "TRICK",
+        "number": 271
+    },
+    {
+        "name": "ROLE_PLAY",
+        "number": 272
+    },
+    {
+        "name": "WISH",
+        "number": 273
+    },
+    {
+        "name": "ASSIST",
+        "number": 274
+    },
+    {
+        "name": "INGRAIN",
+        "number": 275
+    },
+    {
+        "name": "SUPERPOWER",
+        "number": 276
+    },
+    {
+        "name": "MAGIC_COAT",
+        "number": 277
+    },
+    {
+        "name": "RECYCLE",
+        "number": 278
+    },
+    {
+        "name": "REVENGE",
+        "number": 279
+    },
+    {
+        "name": "BRICK_BREAK",
+        "number": 280
+    },
+    {
+        "name": "YAWN",
+        "number": 281
+    },
+    {
+        "name": "KNOCK_OFF",
+        "number": 282
+    },
+    {
+        "name": "ENDEAVOR",
+        "number": 283
+    },
+    {
+        "name": "ERUPTION",
+        "number": 284
+    },
+    {
+        "name": "SKILL_SWAP",
+        "number": 285
+    },
+    {
+        "name": "IMPRISON",
+        "number": 286
+    },
+    {
+        "name": "REFRESH",
+        "number": 287
+    },
+    {
+        "name": "GRUDGE",
+        "number": 288
+    },
+    {
+        "name": "SNATCH",
+        "number": 289
+    },
+    {
+        "name": "SECRET_POWER",
+        "number": 290
+    },
+    {
+        "name": "DIVE",
+        "number": 291
+    },
+    {
+        "name": "ARM_THRUST",
+        "number": 292
+    },
+    {
+        "name": "CAMOUFLAGE",
+        "number": 293
+    },
+    {
+        "name": "TAIL_GLOW",
+        "number": 294
+    },
+    {
+        "name": "LUSTER_PURGE",
+        "number": 295
+    },
+    {
+        "name": "MIST_BALL",
+        "number": 296
+    },
+    {
+        "name": "FEATHER_DANCE",
+        "number": 297
+    },
+    {
+        "name": "FEATHERDANCE",
+        "number": 297
+    },
+    {
+        "name": "TEETER_DANCE",
+        "number": 298
+    },
+    {
+        "name": "BLAZE_KICK",
+        "number": 299
+    },
+    {
+        "name": "MUD_SPORT",
+        "number": 300
+    },
+    {
+        "name": "ICE_BALL",
+        "number": 301
+    },
+    {
+        "name": "NEEDLE_ARM",
+        "number": 302
+    },
+    {
+        "name": "SLACK_OFF",
+        "number": 303
+    },
+    {
+        "name": "HYPER_VOICE",
+        "number": 304
+    },
+    {
+        "name": "POISON_FANG",
+        "number": 305
+    },
+    {
+        "name": "CRUSH_CLAW",
+        "number": 306
+    },
+    {
+        "name": "BLAST_BURN",
+        "number": 307
+    },
+    {
+        "name": "HYDRO_CANNON",
+        "number": 308
+    },
+    {
+        "name": "METEOR_MASH",
+        "number": 309
+    },
+    {
+        "name": "ASTONISH",
+        "number": 310
+    },
+    {
+        "name": "WEATHER_BALL",
+        "number": 311
+    },
+    {
+        "name": "AROMATHERAPY",
+        "number": 312
+    },
+    {
+        "name": "FAKE_TEARS", 
+        "number": 313
+    },
+    {
+        "name": "AIR_CUTTER",
+        "number": 314
+    },
+    {
+        "name": "OVERHEAT",
+        "number": 315
+    },
+    {
+        "name": "ODOR_SLEUTH",
+        "number": 316
+    },
+    {
+        "name": "ROCK_TOMB",
+        "number": 317
+    },
+    {
+        "name": "SILVER_WIND",
+        "number": 318
+    },
+    {
+        "name": "METAL_SOUND",
+        "number": 319
+    },
+    {
+        "name": "GRASS_WHISTLE",
+        "number": 320
+    },
+    {
+        "name": "GRASSWHISTLE",
+        "number": 320
+    },
+    {
+        "name": "TICKLE",
+        "number": 321
+    },
+    {
+        "name": "COSMIC_POWER",
+        "number": 322
+    },
+    {
+        "name": "WATER_SPOUT",
+        "number": 323
+    },
+    {
+        "name": "SIGNAL_BEAM",
+        "number": 324
+    },
+    {
+        "name": "SHADOW_PUNCH",
+        "number": 325
+    },
+    {
+        "name": "EXTRASENSORY",
+        "number": 326
+    },
+    {
+        "name": "SKY_UPPERCUT",
+        "number": 327
+    },
+    {
+        "name": "SAND_TOMB",
+        "number": 328
+    },
+    {
+        "name": "SHEER_COLD",
+        "number": 329
+    },
+    {
+        "name": "MUDDY_WATER",
+        "number": 330
+    },
+    {
+        "name": "BULLET_SEED",
+        "number": 331
+    },
+    {
+        "name": "AERIAL_ACE",
+        "number": 332
+    },
+    {
+        "name": "ICICLE_SPEAR",
+        "number": 333
+    },
+    {
+        "name": "IRON_DEFENSE",
+        "number": 334
+    },
+    {
+        "name": "BLOCK",
+        "number": 335
+    },
+    {
+        "name": "HOWL",
+        "number": 336
+    },
+    {
+        "name": "DRAGON_CLAW",
+        "number": 337
+    },
+    {
+        "name": "FRENZY_PLANT",
+        "number": 338
+    },
+    {
+        "name": "BULK_UP",
+        "number": 339
+    },
+    {
+        "name": "BOUNCE",
+        "number": 340
+    },
+    {
+        "name": "MUD_SHOT",
+        "number": 341
+    },
+    {
+        "name": "POISON_TAIL",
+        "number": 342
+    },
+    {
+        "name": "COVET",
+        "number": 343
+    },
+    {
+        "name": "VOLT_TACKLE",
+        "number": 344
+    },
+    {
+        "name": "MAGICAL_LEAF",
+        "number": 345
+    },
+    {
+        "name": "WATER_SPORT",
+        "number": 346
+    },
+    {
+        "name": "CALM_MIND",
+        "number": 347
+    },
+    {
+        "name": "LEAF_BLADE",
+        "number": 348
+    },
+    {
+        "name": "DRAGON_DANCE",
+        "number": 349
+    },
+    {
+        "name": "ROCK_BLAST",
+        "number": 350
+    },
+    {
+        "name": "SHOCK_WAVE",
+        "number": 351
+    },
+    {
+        "name": "WATER_PULSE",
+        "number": 352
+    },
+    {
+        "name": "DOOM_DESIRE",
+        "number": 353
+    },
+    {
+        "name": "PSYCHO_BOOST",
+        "number": 354
+    },
+    {
+        "name": "ROOST",
+        "number": 355
+    },
+    {
+        "name": "GRAVITY",
+        "number": 356
+    },
+    {
+        "name": "MIRACLE_EYE",
+        "number": 357
+    },
+    {
+        "name": "WAKE_UP_SLAP",
+        "number": 358
+    },
+    {
+        "name": "HAMMER_ARM",
+        "number": 359
+    },
+    {
+        "name": "GYRO_BALL",
+        "number": 360
+    },
+    {
+        "name": "HEALING_WISH",
+        "number": 361
+    },
+    {
+        "name": "BRINE",
+        "number": 362
+    },
+    {
+        "name": "NATURAL_GIFT",
+        "number": 363
+    },
+    {
+        "name": "FEINT",
+        "number": 364
+    },
+    {
+        "name": "PLUCK",
+        "number": 365
+    },
+    {
+        "name": "TAILWIND",
+        "number": 366
+    },
+    {
+        "name": "ACUPRESSURE",
+        "number": 367
+    },
+    {
+        "name": "METAL_BURST",
+        "number": 368
+    },
+    {
+        "name": "U_TURN",
+        "number": 369
+    },
+    {
+        "name": "CLOSE_COMBAT",
+        "number": 370
+    },
+    {
+        "name": "PAYBACK",
+        "number": 371
+    },
+    {
+        "name": "ASSURANCE",
+        "number": 372
+    },
+    {
+        "name": "EMBARGO",
+        "number": 373
+    },
+    {
+        "name": "FLING",
+        "number": 374
+    },
+    {
+        "name": "PSYCHO_SHIFT",
+        "number": 375
+    },
+    {
+        "name": "TRUMP_CARD",
+        "number": 376
+    },
+    {
+        "name": "HEAL_BLOCK",
+        "number": 377
+    },
+    {
+        "name": "WRING_OUT",
+        "number": 378
+    },
+    {
+        "name": "POWER_TRICK",
+        "number": 379
+    },
+    {
+        "name": "GASTRO_ACID",
+        "number": 380
+    },
+    {
+        "name": "LUCKY_CHANT",
+        "number": 381
+    },
+    {
+        "name": "ME_FIRST",
+        "number": 382
+    },
+    {
+        "name": "COPYCAT",
+        "number": 383
+    },
+    {
+        "name": "POWER_SWAP",
+        "number": 384
+    },
+    {
+        "name": "GUARD_SWAP",
+        "number": 385
+    },
+    {
+        "name": "PUNISHMENT",
+        "number": 386
+    },
+    {
+        "name": "LAST_RESORT",
+        "number": 387
+    },
+    {
+        "name": "WORRY_SEED",
+        "number": 388
+    },
+    {
+        "name": "SUCKER_PUNCH",
+        "number": 389
+    },
+    {
+        "name": "TOXIC_SPIKES",
+        "number": 390
+    },
+    {
+        "name": "HEART_SWAP",
+        "number": 391
+    },
+    {
+        "name": "AQUA_RING",
+        "number": 392
+    },
+    {
+        "name": "MAGNET_RISE",
+        "number": 393
+    },
+    {
+        "name": "FLARE_BLITZ",
+        "number": 394
+    },
+    {
+        "name": "FORCE_PALM",
+        "number": 395
+    },
+    {
+        "name": "AURA_SPHERE",
+        "number": 396
+    },
+    {
+        "name": "ROCK_POLISH",
+        "number": 397
+    },
+    {
+        "name": "POISON_JAB",
+        "number": 398
+    },
+    {
+        "name": "DARK_PULSE",
+        "number": 399
+    },
+    {
+        "name": "NIGHT_SLASH",
+        "number": 400
+    },
+    {
+        "name": "AQUA_TAIL",
+        "number": 401
+    },
+    {
+        "name": "SEED_BOMB",
+        "number": 402
+    },
+    {
+        "name": "AIR_SLASH",
+        "number": 403
+    },
+    {
+        "name": "X_SCISSOR",
+        "number": 404
+    },
+    {
+        "name": "BUG_BUZZ",
+        "number": 405
+    },
+    {
+        "name": "DRAGON_PULSE",
+        "number": 406
+    },
+    {
+        "name": "DRAGON_RUSH",
+        "number": 407
+    },
+    {
+        "name": "POWER_GEM",
+        "number": 408
+    },
+    {
+        "name": "DRAIN_PUNCH",
+        "number": 409
+    },
+    {
+        "name": "VACUUM_WAVE",
+        "number": 410
+    },
+    {
+        "name": "FOCUS_BLAST",
+        "number": 411
+    },
+    {
+        "name": "ENERGY_BALL",
+        "number": 412
+    },
+    {
+        "name": "BRAVE_BIRD",
+        "number": 413
+    },
+    {
+        "name": "EARTH_POWER",
+        "number": 414
+    },
+    {
+        "name": "SWITCHEROO",
+        "number": 415
+    },
+    {
+        "name": "GIGA_IMPACT",
+        "number": 416
+    },
+    {
+        "name": "NASTY_PLOT",
+        "number": 417
+    },
+    {
+        "name": "BULLET_PUNCH",
+        "number": 418
+    },
+    {
+        "name": "AVALANCHE",
+        "number": 419
+    },
+    {
+        "name": "ICE_SHARD",
+        "number": 420
+    },
+    {
+        "name": "SHADOW_CLAW",
+        "number": 421
+    },
+    {
+        "name": "THUNDER_FANG",
+        "number": 422
+    },
+    {
+        "name": "ICE_FANG",
+        "number": 423
+    },
+    {
+        "name": "FIRE_FANG",
+        "number": 424
+    },
+    {
+        "name": "SHADOW_SNEAK",
+        "number": 425
+    },
+    {
+        "name": "MUD_BOMB",
+        "number": 426
+    },
+    {
+        "name": "PSYCHO_CUT",
+        "number": 427
+    },
+    {
+        "name": "ZEN_HEADBUTT",
+        "number": 428
+    },
+    {
+        "name": "MIRROR_SHOT",
+        "number": 429
+    },
+    {
+        "name": "FLASH_CANNON",
+        "number": 430
+    },
+    {
+        "name": "ROCK_CLIMB",
+        "number": 431
+    },
+    {
+        "name": "DEFOG",
+        "number": 432
+    },
+    {
+        "name": "TRICK_ROOM",
+        "number": 433
+    },
+    {
+        "name": "DRACO_METEOR",
+        "number": 434
+    },
+    {
+        "name": "DISCHARGE",
+        "number": 435
+    },
+    {
+        "name": "LAVA_PLUME",
+        "number": 436
+    },
+    {
+        "name": "LEAF_STORM",
+        "number": 437
+    },
+    {
+        "name": "POWER_WHIP",
+        "number": 438
+    },
+    {
+        "name": "ROCK_WRECKER",
+        "number": 439
+    },
+    {
+        "name": "CROSS_POISON",
+        "number": 440
+    },
+    {
+        "name": "GUNK_SHOT",
+        "number": 441
+    },
+    {
+        "name": "IRON_HEAD",
+        "number": 442
+    },
+    {
+        "name": "MAGNET_BOMB",
+        "number": 443
+    },
+    {
+        "name": "STONE_EDGE",
+        "number": 444
+    },
+    {
+        "name": "CAPTIVATE",
+        "number": 445
+    },
+    {
+        "name": "STEALTH_ROCK",
+        "number": 446
+    },
+    {
+        "name": "GRASS_KNOT",
+        "number": 447
+    },
+    {
+        "name": "CHATTER",
+        "number": 448
+    },
+    {
+        "name": "JUDGMENT",
+        "number": 449
+    },
+    {
+        "name": "BUG_BITE",
+        "number": 450
+    },
+    {
+        "name": "CHARGE_BEAM",
+        "number": 451
+    },
+    {
+        "name": "WOOD_HAMMER",
+        "number": 452
+    },
+    {
+        "name": "AQUA_JET",
+        "number": 453
+    },
+    {
+        "name": "ATTACK_ORDER",
+        "number": 454
+    },
+    {
+        "name": "DEFEND_ORDER",
+        "number": 455
+    },
+    {
+        "name": "HEAL_ORDER",
+        "number": 456
+    },
+    {
+        "name": "HEAD_SMASH",
+        "number": 457
+    },
+    {
+        "name": "DOUBLE_HIT",
+        "number": 458
+    },
+    {
+        "name": "ROAR_OF_TIME",
+        "number": 459
+    },
+    {
+        "name": "SPACIAL_REND",
+        "number": 460
+    },
+    {
+        "name": "LUNAR_DANCE",
+        "number": 461
+    },
+    {
+        "name": "CRUSH_GRIP",
+        "number": 462
+    },
+    {
+        "name": "MAGMA_STORM",
+        "number": 463
+    },
+    {
+        "name": "DARK_VOID",
+        "number": 464
+    },
+    {
+        "name": "SEED_FLARE",
+        "number": 465
+    },
+    {
+        "name": "OMINOUS_WIND",
+        "number": 466
+    },
+    {
+        "name": "SHADOW_FORCE",
+        "number": 467
+    },
+    {
+        "name": "HONE_CLAWS",
+        "number": 468
+    },
+    {
+        "name": "WIDE_GUARD",
+        "number": 469
+    },
+    {
+        "name": "GUARD_SPLIT",
+        "number": 470
+    },
+    {
+        "name": "POWER_SPLIT",
+        "number": 471
+    },
+    {
+        "name": "WONDER_ROOM",
+        "number": 472
+    },
+    {
+        "name": "PSYSHOCK",
+        "number": 473
+    },
+    {
+        "name": "VENOSHOCK",
+        "number": 474
+    },
+    {
+        "name": "AUTOTOMIZE",
+        "number": 475
+    },
+    {
+        "name": "RAGE_POWDER",
+        "number": 476
+    },
+    {
+        "name": "TELEKINESIS",
+        "number": 477
+    },
+    {
+        "name": "MAGIC_ROOM",
+        "number": 478
+    },
+    {
+        "name": "SMACK_DOWN",
+        "number": 479
+    },
+    {
+        "name": "STORM_THROW",
+        "number": 480
+    },
+    {
+        "name": "FLAME_BURST",
+        "number": 481
+    },
+    {
+        "name": "SLUDGE_WAVE",
+        "number": 482
+    },
+    {
+        "name": "QUIVER_DANCE",
+        "number": 483
+    },
+    {
+        "name": "HEAVY_SLAM",
+        "number": 484
+    },
+    {
+        "name": "SYNCHRONOISE",
+        "number": 485
+    },
+    {
+        "name": "ELECTRO_BALL",
+        "number": 486
+    },
+    {
+        "name": "SOAK",
+        "number": 487
+    },
+    {
+        "name": "FLAME_CHARGE",
+        "number": 488
+    },
+    {
+        "name": "COIL",
+        "number": 489
+    },
+    {
+        "name": "LOW_SWEEP",
+        "number": 490
+    },
+    {
+        "name": "ACID_SPRAY",
+        "number": 491
+    },
+    {
+        "name": "FOUL_PLAY",
+        "number": 492
+    },
+    {
+        "name": "SIMPLE_BEAM",
+        "number": 493
+    },
+    {
+        "name": "ENTRAINMENT",
+        "number": 494
+    },
+    {
+        "name": "AFTER_YOU",
+        "number": 495
+    },
+    {
+        "name": "ROUND",
+        "number": 496
+    },
+    {
+        "name": "ECHOED_VOICE",
+        "number": 497
+    },
+    {
+        "name": "CHIP_AWAY",
+        "number": 498
+    },
+    {
+        "name": "CLEAR_SMOG",
+        "number": 499
+    },
+    {
+        "name": "STORED_POWER",
+        "number": 500
+    },
+    {
+        "name": "QUICK_GUARD",
+        "number": 501
+    },
+    {
+        "name": "ALLY_SWITCH",
+        "number": 502
+    },
+    {
+        "name": "SCALD",
+        "number": 503
+    },
+    {
+        "name": "SHELL_SMASH",
+        "number": 504
+    },
+    {
+        "name": "HEAL_PULSE",
+        "number": 505
+    },
+    {
+        "name": "HEX",
+        "number": 506
+    },
+    {
+        "name": "SKY_DROP",
+        "number": 507
+    },
+    {
+        "name": "SHIFT_GEAR",
+        "number": 508
+    },
+    {
+        "name": "CIRCLE_THROW",
+        "number": 509
+    },
+    {
+        "name": "INCINERATE",
+        "number": 510
+    },
+    {
+        "name": "QUASH",
+        "number": 511
+    },
+    {
+        "name": "ACROBATICS",
+        "number": 512
+    },
+    {
+        "name": "REFLECT_TYPE",
+        "number": 513
+    },
+    {
+        "name": "RETALIATE",
+        "number": 514
+    },
+    {
+        "name": "FINAL_GAMBIT",
+        "number": 515
+    },
+    {
+        "name": "BESTOW",
+        "number": 516
+    },
+    {
+        "name": "INFERNO",
+        "number": 517
+    },
+    {
+        "name": "WATER_PLEDGE",
+        "number": 518
+    },
+    {
+        "name": "FIRE_PLEDGE",
+        "number": 519
+    },
+    {
+        "name": "GRASS_PLEDGE",
+        "number": 520
+    },
+    {
+        "name": "VOLT_SWITCH",
+        "number": 521
+    },
+    {
+        "name": "STRUGGLE_BUG",
+        "number": 522
+    },
+    {
+        "name": "BULLDOZE",
+        "number": 523
+    },
+    {
+        "name": "FROST_BREATH",
+        "number": 524
+    },
+    {
+        "name": "DRAGON_TAIL",
+        "number": 525
+    },
+    {
+        "name": "WORK_UP",
+        "number": 526
+    },
+    {
+        "name": "ELECTROWEB",
+        "number": 527
+    },
+    {
+        "name": "WILD_CHARGE",
+        "number": 528
+    },
+    {
+        "name": "DRILL_RUN",
+        "number": 529
+    },
+    {
+        "name": "DUAL_CHOP",
+        "number": 530
+    },
+    {
+        "name": "HEART_STAMP",
+        "number": 531
+    },
+    {
+        "name": "HORN_LEECH",
+        "number": 532
+    },
+    {
+        "name": "SACRED_SWORD",
+        "number": 533
+    },
+    {
+        "name": "RAZOR_SHELL",
+        "number": 534
+    },
+    {
+        "name": "HEAT_CRASH",
+        "number": 535
+    },
+    {
+        "name": "LEAF_TORNADO",
+        "number": 536
+    },
+    {
+        "name": "STEAMROLLER",
+        "number": 537
+    },
+    {
+        "name": "COTTON_GUARD",
+        "number": 538
+    },
+    {
+        "name": "NIGHT_DAZE",
+        "number": 539
+    },
+    {
+        "name": "PSYSTRIKE",
+        "number": 540
+    },
+    {
+        "name": "TAIL_SLAP",
+        "number": 541
+    },
+    {
+        "name": "HURRICANE",
+        "number": 542
+    },
+    {
+        "name": "HEAD_CHARGE",
+        "number": 543
+    },
+    {
+        "name": "GEAR_GRIND",
+        "number": 544
+    },
+    {
+        "name": "SEARING_SHOT",
+        "number": 545
+    },
+    {
+        "name": "TECHNO_BLAST",
+        "number": 546
+    },
+    {
+        "name": "RELIC_SONG",
+        "number": 547
+    },
+    {
+        "name": "SECRET_SWORD",
+        "number": 548
+    },
+    {
+        "name": "GLACIATE",
+        "number": 549
+    },
+    {
+        "name": "BOLT_STRIKE",
+        "number": 550
+    },
+    {
+        "name": "BLUE_FLARE",
+        "number": 551
+    },
+    {
+        "name": "FIERY_DANCE",
+        "number": 552
+    },
+    {
+        "name": "FREEZE_SHOCK",
+        "number": 553
+    },
+    {
+        "name": "ICE_BURN",
+        "number": 554
+    },
+    {
+        "name": "SNARL",
+        "number": 555
+    },
+    {
+        "name": "ICICLE_CRASH",
+        "number": 556
+    },
+    {
+        "name": "V_CREATE",
+        "number": 557
+    },
+    {
+        "name": "FUSION_FLARE",
+        "number": 558
+    },
+    {
+        "name": "FUSION_BOLT",
+        "number": 559
+    }
+]
