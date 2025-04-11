@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mosse uovo Matrix</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7SP38WR0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZB7SP38WR0');
+  </script>
+  <style>
+    /* Reset e impostazioni base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(30, 30, 30, 0.95);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+      height: 45px;
+      box-sizing: border-box;
+    }
+    
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      align-items: center; /* Assicura allineamento verticale di tutti gli elementi */
+      height: 100%; /* Assicura che il menu occupi tutta l'altezza della navbar */
+    }
+    
+    .nav-menu li {
+      margin: 0;
+      padding: 0;
+      display: flex; /* Aggiungo flex per allineare uniformemente */
+      align-items: center; /* Centra verticalmente il contenuto di ogni li */
+      height: 100%; /* Assicura che ogni elemento occupi l'altezza completa */
+    }
+    
+    .nav-menu li {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav-menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 4px 6px;
+      transition: color 0.3s ease;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    
+    .nav-menu li a:hover {
+      color: #FFD700;
+      text-decoration: underline;
+    }
+    
+     
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    
+    .menu-toggle div {
+      width: 20px;
+      height: 2px;
+      background: white;
+      margin: 3px 0;
+    }
+    
+    /* Main content */
+    .main-content {
+      padding-top: 60px; /* Spazio per la navbar fissa */
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    
+    /* Titolo principale */
+    h1 {
+      margin: 20px 0;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    /* Card-style per la sezione principale */
+    .card-section {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      margin-bottom: 20px;
+    }
+    
+    /* Campo di ricerca */
+    .search-container {
+      margin: 20px 0;
+    }
+    
+    input[type="search"] {
+      width: 100%;
+      max-width: 310px; /* Aumentato di 10px come richiesto */
+      padding: 12px 16px;
+      font-size: 16px;
+      background-color: #2a2a2a;
+      color: #f0f0f0;
+      border: 1px solid #444;
+      border-radius: 4px;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+    
+    input[type="search"]:focus {
+      outline: none;
+      border-color: #FFD700;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+    
+    input[type="search"]::placeholder {
+      color: #888;
+    }
+    
+    /* Stile tabella */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #292929;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      margin: 20px 0;
+    }
+    
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #3a3a3a;
+    }
+    
+    th {
+      background-color: #333;
+      color: #f8d030;
+      font-weight: bold;
+    }
+    
+    tbody tr:hover {
+      background-color: #383838;
+    }
+    
+    /* Stile link nelle righe della tabella */
+    td a {
+      color: #e0e0e0;
+      text-decoration: none;
+      display: block;
+    }
+    
+    td a:hover {
+      color: #FFD700;
+      text-decoration: underline;
+    }
+    
+    /* Stile tracker */
+    .nav-menu li.tracker a {
+      background-color: #9370DB;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 0 5px #9370DB;
+      transition: all 0.3s ease;
+      animation: backgroundPulse 2s infinite;
+    }
+    
+    @keyframes backgroundPulse {
+      0% { background-color: #9370DB; }
+      50% { background-color: #8A2BE2; }
+      100% { background-color: #9370DB; }
+    }
+    
+    /* Responsive: navbar */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        background: rgba(30, 30, 30, 0.95);
+        padding: 8px 0;
+        text-align: center;
+      }
+      
+      .nav-menu.active {
+        display: flex;
+      }
+      
+      .menu-toggle {
+        display: flex;
+      }
+    }
+    
+    /* Responsive: tabella */
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      
+      tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #444;
+      }
+      
+      td {
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #3a3a3a;
+        min-height: 44px; /* Aggiunto per migliorare l'allineamento verticale */
+        display: flex;
+        align-items: center; /* Centratura verticale */
+      }
+      
+      td:before {
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label);
+        font-weight: bold;
+        color: #f8d030;
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+    }
+	
+	/* Effetto Matrix per la voce "NUOVO Uovo Matrix!" */
+	.nav-menu li.matrix-egg a {
+	  background-color: black;
+	  color: #00ff00;
+	  padding: 4px 8px;
+	  border-radius: 5px;
+	  font-weight: bold;
+	  font-family: 'Courier New', monospace;
+	  box-shadow: 0 0 8px #00ff00;
+	  animation: matrixGlow 1.5s infinite alternate, matrixType 3s steps(20, end) infinite;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  display: inline-block;
+	}
+
+	@keyframes matrixGlow {
+	  0% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; }
+	  100% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
+	}
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="https://core.startab.it/">StartAB.it</a></li>
+      <li><a href="https://wesleystedman.github.io/ironmon-moveset-coverage-calc/">Coverage Calculator</a></li>
+      <li><a href="index.html">Tool Uova</a></li>
+	  <li class="matrix-egg"><a href="matrix.html">Uovo Matrix</a></li>
+      <li><a href="evoluzioni.html">Evoluzioni</a></li>
+      <li><a href="ban.html">Ban</a></li>
+      <li class="tracker"><a href="tracker.html">NUOVO Tracker!</a></li>
+      <li><a href="https://www.canva.com/design/DAGg-PsdqvM/e9vbIPlu0fJse0CxDWLjNA/view?utm_content=DAGg-PsdqvM&utm_campaign=designshare&utm_medium=link&utm_source=viewer">Guida</a></li>
+      <li><a href="https://www.canva.com/design/DAGQwO-JQrI/TTMsurbjR2oP8yBNl1K1vw/view?utm_content=DAGQwO-JQrI&utm_campaign=designshare&utm_medium=link&utm_source=viewer">FAQ</a></li>
+      <li><a href="errori.html">Ricerca Errori</a></li>
+      <li><a href="https://docs.google.com/spreadsheets/d/104zALQ-vnMOwINoSa1-Tu1MAWVjq_tLnXikVgl3sAf0/edit?usp=sharing">Doc. Preferiti 🔗</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <h1>Mosse uovo Matrix</h1>
+    
+    <div class="card-section">
+      <div class="search-container">
+        <input type="search" id="searchInput" placeholder="Cerca una mossa per nome o per ID...">
+      </div>
+      
+      <table id="movesTable">
+        <thead>
+          <tr>
+            <th>ID Mossa</th>
+            <th>Nome Mossa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Qui verranno inserite le righe tramite JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <!-- Script per caricare il JSON e implementare la ricerca -->
+  <script>
+    // Funzione per formattare il nome della mossa per l'URL di Bulbapedia
+    function formatMoveNameForURL(moveName) {
+      return moveName.split('_')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join('_');
+    }
+    
+    // Carica il file JSON contenente le mosse
+    fetch('mosse-matrix.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Errore nel caricamento del file JSON.');
+        }
+        return response.json();
+      })
+      .then(data => {
+        const tbody = document.querySelector('#movesTable tbody');
+        
+        data.forEach(move => {
+          // Crea la riga per ciascuna mossa
+          const tr = document.createElement('tr');
+          
+          // Crea celle per ID e Nome
+          const tdId = document.createElement('td');
+          tdId.setAttribute('data-label', 'ID Mossa');
+          tdId.textContent = move.number; // Corretto da move.id a move.number
+          
+          const tdName = document.createElement('td');
+          tdName.setAttribute('data-label', 'Nome Mossa');
+          
+          // Crea il link per Bulbapedia
+          if (move.name !== "NONE") {
+            const moveLink = document.createElement('a');
+            moveLink.href = "https://bulbapedia.bulbagarden.net/wiki/" + formatMoveNameForURL(move.name) + "_(move)";
+            moveLink.textContent = move.name;
+            moveLink.target = "_blank"; // Apre il link in una nuova scheda
+            tdName.appendChild(moveLink);
+          } else {
+            tdName.textContent = move.name;
+          }
+          
+          tr.appendChild(tdId);
+          tr.appendChild(tdName);
+          tbody.appendChild(tr);
+        });
+      })
+      .catch(error => {
+        console.error('Errore:', error);
+        const container = document.querySelector('.card-section');
+        const errorMessage = document.createElement('p');
+        errorMessage.textContent = 'Si è verificato un errore nel caricamento dei dati.';
+        errorMessage.style.color = 'red';
+        errorMessage.style.marginTop = '20px';
+        container.appendChild(errorMessage);
+      });
+    
+    // Funzione di ricerca: filtra le righe della tabella
+    document.getElementById('searchInput').addEventListener('input', function() {
+      const searchValue = this.value.toLowerCase();
+      const rows = document.querySelectorAll('#movesTable tbody tr');
+      
+      rows.forEach(row => {
+        const id = row.children[0].textContent.toLowerCase();
+        const name = row.children[1].textContent.toLowerCase();
+        
+        // Se il valore cercato è contenuto nell'id o nel nome, mostra la riga, altrimenti nascondila
+        if (id.includes(searchValue) || name.includes(searchValue)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+    
+    // Funzione per il toggle del menu
+    function toggleMenu() {
+      document.querySelector(".nav-menu").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
