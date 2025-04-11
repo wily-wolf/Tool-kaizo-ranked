@@ -472,10 +472,6 @@
         "number": 119
     },
     {
-        "name": "SELF_DESTRUCT",
-        "number": 120
-    },
-    {
         "name": "SELFDESTRUCT",
         "number": 120
     },
@@ -534,10 +530,6 @@
     {
         "name": "KINESIS",
         "number": 134
-    },
-    {
-        "name": "SOFT_BOILED",
-        "number": 135
     },
     {
         "name": "SOFTBOILED",
@@ -904,19 +896,11 @@
         "number": 223
     },
     {
-        "name": "DYNAMICPUNCH",
-        "number": 223
-    },
-    {
         "name": "MEGAHORN",
         "number": 224
     },
     {
         "name": "DRAGON_BREATH",
-        "number": 225
-    },
-    {
-        "name": "DRAGONBREATH",
         "number": 225
     },
     {
@@ -1000,15 +984,7 @@
         "number": 245
     },
     {
-        "name": "EXTREMESPEED",
-        "number": 245
-    },
-    {
         "name": "ANCIENT_POWER",
-        "number": 246
-    },
-    {
-        "name": "ANCIENTPOWER",
         "number": 246
     },
     {
@@ -1081,10 +1057,6 @@
     },
     {
         "name": "SMELLING_SALTS",
-        "number": 265
-    },
-    {
-        "name": "SMELLINGSALT",
         "number": 265
     },
     {
@@ -1216,10 +1188,6 @@
         "number": 297
     },
     {
-        "name": "FEATHERDANCE",
-        "number": 297
-    },
-    {
         "name": "TEETER_DANCE",
         "number": 298
     },
@@ -1309,10 +1277,6 @@
     },
     {
         "name": "GRASS_WHISTLE",
-        "number": 320
-    },
-    {
-        "name": "GRASSWHISTLE",
         "number": 320
     },
     {
