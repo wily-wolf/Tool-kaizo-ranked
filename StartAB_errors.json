@@ -18,5 +18,9 @@
   {
     "error": 419,
     "reason": "Sono state apportate modifiche al sito. Aggiorna la pagina"
+  },
+  {
+    "error": 300158,
+    "reason": "Segui in ordine i seguenti passaggi: Tasto emergenza, chiudi il browser, riapri tutto, fai la login, carica la rom, fai la patch"
   }
 ]
