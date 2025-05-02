@@ -1,0 +1,108 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(30, 30, 30, 0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  height: 45px;
+  box-sizing: border-box;
+  line-height: 1.2;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.nav-menu li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 6px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+.nav-menu li a:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu-toggle div {
+  width: 20px;
+  height: 2px;
+  background: white;
+  margin: 3px 0;
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.95);
+    padding: 8px 0;
+    text-align: center;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* Extra styling (effetti animati) */
+.nav-menu li.tracker a {
+  background-color: #9370DB;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 5px #9370DB;
+  transition: all 0.3s ease;
+  animation: backgroundPulse 2s infinite;
+}
+.nav-menu li.tracker a:hover {
+  background-color: #8A2BE2;
+  transform: scale(1.05);
+  color: white;
+  text-decoration: none;
+}
+@keyframes backgroundPulse {
+  0% { background-color: #9370DB; }
+  50% { background-color: #8A2BE2; }
+  100% { background-color: #9370DB; }
+}
+.nav-menu li.matrix-egg a {
+  background-color: black;
+  color: #00ff00;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  box-shadow: 0 0 8px #00ff00;
+  animation: matrixGlow 1.5s infinite alternate;
+}
+@keyframes matrixGlow {
+  0% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; }
+  100% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
+}
