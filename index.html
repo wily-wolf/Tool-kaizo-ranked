@@ -13,6 +13,10 @@
 
 	gtag('config', 'G-ZB7SP38WR0');
 	</script>
+
+  <!-- CSS Navbar -->
+  <link rel="stylesheet" href="navbar.css">
+
     <style>
 		body {
 			font-family: Arial, sans-serif;
@@ -119,57 +123,8 @@
                 font-size: 14px;
             }
         }
-        /* Navbar */
-		.navbar {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			background: rgba(30, 30, 30, 0.95);
-			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-			z-index: 1000;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 5px 10px;
-			height: 45px;
-			box-sizing: border-box;
-		}
-        .logo {
-            font-size: 16px;
-            font-weight: bold;
-            white-space: nowrap;
-        }
-        /* Navbar specific list styling */
-		.nav-menu {
-		  list-style: none;
-		  display: flex;
-		  gap: 12px;
-		  margin: 0;
-		  padding: 0;
-		  align-items: center; 
-		}
-		.nav-menu li {
-		  margin: 0;
-		  padding: 0;
-		  display: flex; 
-		  align-items: center; 
-		  height: 100%; 
-		}
 
-        .nav-menu li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 4px 6px;
-            transition: color 0.3s ease;
-            font-size: 14px;
-            line-height: 1.2;
-        }
-        .nav-menu li a:hover {
-            color: #FFD700;
-            text-decoration: underline;
-        }
+
         /* Navbar responsive */
         .menu-toggle {
             display: none;
@@ -213,79 +168,12 @@
 		.main-content {
 			padding-top: 25px;
 		}
-
-	.nav-menu li.tracker a {
-	  background-color: #9370DB; /* Viola medio-chiaro */
-	  color: white;
-	  padding: 4px 8px;
-	  border-radius: 5px;
-	  font-weight: bold;
-	  box-shadow: 0 0 5px #9370DB;
-	  transition: all 0.3s ease;
-	}
-
-	.nav-menu li.tracker a:hover {
-	  background-color: #8A2BE2; /* Viola più intenso all'hover */
-	  transform: scale(1.05);
-	  color: white;
-	  text-decoration: none;
-	}
-
-	@keyframes backgroundPulse {
-	  0% { background-color: #9370DB; }
-	  50% { background-color: #8A2BE2; }
-	  100% { background-color: #9370DB; }
-	}
-
-	.nav-menu li.tracker a {
-	  animation: backgroundPulse 2s infinite;
-	}
-	 
-	/* Effetto Matrix */
-	.nav-menu li.matrix-egg a {
-	  background-color: black;
-	  color: #00ff00;
-	  padding: 4px 8px;
-	  border-radius: 5px;
-	  font-weight: bold;
-	  font-family: 'Courier New', monospace;
-	  box-shadow: 0 0 8px #00ff00;
-	  animation: matrixGlow 1.5s infinite alternate, matrixType 3s steps(20, end) infinite;
-	  white-space: nowrap;
-	  overflow: hidden;
-	  display: inline-block;
-	}
-
-	@keyframes matrixGlow {
-	  0% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; }
-	  100% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
-	}
 		 
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <!-- <div class="logo">Tool Fusioni Uova</div> -->
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    <ul class="nav-menu">
-      <li><a href="https://core.startab.it/">StartAB.it</a></li>
-      <li><a href="https://wesleystedman.github.io/ironmon-moveset-coverage-calc/">Coverage Calculator</a></li>
-      <li><a href="index.html">Tool Uova</a></li>
-	  <li class="matrix-egg"><a href="matrix.html">Uovo Matrix</a></li>
-      <li><a href="evoluzioni.html">Evoluzioni</a></li>
-      <li><a href="ban.html">Ban</a></li>
-      <li class="tracker"><a href="tracker.html">NUOVO Tracker!</a></li>
-      <li><a href="https://www.canva.com/design/DAGg-PsdqvM/e9vbIPlu0fJse0CxDWLjNA/view?utm_content=DAGg-PsdqvM&utm_campaign=designshare&utm_medium=link&utm_source=viewer">Guida</a></li>
-      <li><a href="https://www.canva.com/design/DAGQwO-JQrI/TTMsurbjR2oP8yBNl1K1vw/view?utm_content=DAGQwO-JQrI&utm_campaign=designshare&utm_medium=link&utm_source=viewer">FAQ</a></li>
-      <li><a href="errori.html">Ricerca Errori</a></li>
-      <li><a href="https://docs.google.com/spreadsheets/d/104zALQ-vnMOwINoSa1-Tu1MAWVjq_tLnXikVgl3sAf0/edit?usp=sharing">Doc. Preferiti 🔗</a></li>
-    </ul>
-    </nav>
+  <!-- Navbar -->
+  <script src="navbar-loader.js" defer></script>
     
     <div class="credits">Credits: frenk95ita, kuroe, Renga98 per i dati, davoemme per l'idea</div>
     
