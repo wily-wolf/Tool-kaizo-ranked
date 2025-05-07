@@ -50,7 +50,7 @@
   background: white;
   margin: 3px 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 890px) {
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -105,4 +105,26 @@
 @keyframes matrixGlow {
   0% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; }
   100% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
+}
+
+/* Stile Tutorial */
+.nav-menu li.tutorial a {
+  background-color: #cc0000;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  animation: tutorialGlow 2s infinite alternate;
+}
+.nav-menu li.tutorial a:hover {
+  background-color: #ff0000;
+  transform: scale(1.05);
+  color: white;
+  text-decoration: none;
+}
+@keyframes tutorialGlow {
+  0% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.6); text-shadow: 0 0 2px rgba(255, 255, 255, 0.8); }
+  100% { box-shadow: 0 0 12px rgba(255, 0, 0, 0.8); text-shadow: 0 0 5px rgba(255, 255, 255, 1); }
 }
