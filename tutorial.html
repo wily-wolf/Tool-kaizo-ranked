@@ -918,85 +918,74 @@
 
 	<!-- Script per gestire entrambi gli embed -->
 	<script>
-	  // Flags separate per tracciare se i player sono stati caricati
-	  let twitchPlayerStartABLoaded = false;
-	  let twitchPlayerValutareLoaded = false;
-	  let twitchScriptLoaded = false;
-	  
-	  // Carica lo script Twitch una sola volta
-	  function loadTwitchScript(callback) {
-		if (twitchScriptLoaded) {
-		  callback();
-		  return;
-		}
-		
-		const script = document.createElement('script');
-		script.src = "https://player.twitch.tv/js/embed/v1.js";
-		script.onload = function() {
-		  twitchScriptLoaded = true;
-		  callback();
-		};
-		document.body.appendChild(script);
+	// Gestione per l'embed Twitch attivo
+	const twitchEmbeds = [
+	  {
+		id: "twitch-embed-valutare",
+		videoId: "2449808192", 
+		sectionSelector: '.collapsible-section:nth-of-type(3)', // Sezione "Come valutare un Pokemon"
+		loaded: false
+	  }
+	];
+
+	let twitchScriptLoaded = false;
+
+	// Carica lo script Twitch una sola volta
+	function loadTwitchScript(callback) {
+	  if (twitchScriptLoaded) {
+		callback();
+		return;
 	  }
 	  
-	  // Funzione per caricare il player 1
-	  function loadStartABPlayer() {
-		if (twitchPlayerStartABLoaded) return;
-		
-		loadTwitchScript(function() {
-		  // Player 1
-		  new Twitch.Player("twitch-embed-startab", {
-			video: "2450261259",
-			width: "100%",
-			height: "100%",
-			autoplay: false
-		  });
-		  
-		  // Nascondi lo spinner di caricamento
-		  document.querySelector('.collapsible-section:nth-of-type(2) .loading-spinner').style.display = 'none';
-		  twitchPlayerStartABLoaded = true;
-		});
+	  const script = document.createElement('script');
+	  script.src = "https://player.twitch.tv/js/embed/v1.js";
+	  script.onload = function() {
+		twitchScriptLoaded = true;
+		callback();
+	  };
+	  document.body.appendChild(script);
+	}
+
+	// Carica un player Twitch specifico
+	function loadTwitchPlayer(embedConfig) {
+	  if (embedConfig.loaded) return;
+	  
+	  const embedElement = document.getElementById(embedConfig.id);
+	  if (!embedElement) {
+		console.error(`Elemento con ID ${embedConfig.id} non trovato`);
+		return;
 	  }
 	  
-	  // Funzione per caricare il player 2
-	  function loadValutarePlayer() {
-		if (twitchPlayerValutareLoaded) return;
-		
-		loadTwitchScript(function() {
-		  // Player 2
-		  new Twitch.Player("twitch-embed-valutare", {
-			video: "2449808192",
-			width: "100%",
-			height: "100%",
-			autoplay: false
-		  });
-		  
-		  // Nascondi lo spinner di caricamento
-		  document.querySelector('.collapsible-section:nth-of-type(3) .loading-spinner').style.display = 'none';
-		  twitchPlayerValutareLoaded = true;
-		});
-	  }
-	  
-	  // Aggiungi event listener per entrambe le sezioni
-	  document.addEventListener('DOMContentLoaded', function() {
-		// Event listener per la sezione StartAB
-		const startabHeader = document.querySelector('.collapsible-section:nth-of-type(2) .collapsible-header');
-		startabHeader.addEventListener('click', function() {
-		  // Se la sezione sta per essere aperta, carica il player
-		  if (!this.closest('.collapsible-section').classList.contains('active')) {
-			setTimeout(loadStartABPlayer, 100);
-		  }
+	  loadTwitchScript(function() {
+		new Twitch.Player(embedConfig.id, {
+		  video: embedConfig.videoId,
+		  width: "100%",
+		  height: "100%",
+		  autoplay: false
 		});
 		
-		// Event listener per la sezione Valutare Pokemon
-		const valutareHeader = document.querySelector('.collapsible-section:nth-of-type(3) .collapsible-header');
-		valutareHeader.addEventListener('click', function() {
-		  // Se la sezione sta per essere aperta, carica il player
-		  if (!this.closest('.collapsible-section').classList.contains('active')) {
-			setTimeout(loadValutarePlayer, 100);
-		  }
-		});
+		// Nascondi lo spinner di caricamento
+		const spinner = embedElement.closest(embedConfig.sectionSelector).querySelector('.loading-spinner');
+		if (spinner) spinner.style.display = 'none';
+		
+		embedConfig.loaded = true;
 	  });
+	}
+
+	// Aggiungi event listener per tutte le sezioni Twitch
+	document.addEventListener('DOMContentLoaded', function() {
+	  twitchEmbeds.forEach(embed => {
+		const header = document.querySelector(`${embed.sectionSelector} .collapsible-header`);
+		if (header) {
+		  header.addEventListener('click', function() {
+			// Se la sezione sta per essere aperta, carica il player
+			if (!this.closest('.collapsible-section').classList.contains('active')) {
+			  setTimeout(() => loadTwitchPlayer(embed), 100);
+			}
+		  });
+		}
+	  });
+	});
 	</script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script async src="https://www.instagram.com/embed.js"></script>
