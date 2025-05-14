@@ -34,6 +34,25 @@
             letter-spacing: 5px;
             text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
             animation: pulse 2s infinite;
+            transition: all 0.3s ease;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        a:hover h1 {
+            color: #ff9900;
+            text-shadow: 0 0 20px rgba(255, 153, 0, 0.7);
+            transform: scale(1.1);
+        }
+        
+        a:active h1 {
+            color: #ff3300;
+            transform: scale(0.95);
         }
         
         @keyframes pulse {
@@ -57,7 +76,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>PUZZO</h1>
+        <a href="#" id="puzzo-link">
+            <h1>PUZZO</h1>
+        </a>
     </div>
+    <script>
+        document.getElementById('puzzo-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Hai cliccato PUZZO! AHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAH');
+        });
+    </script>
 </body>
 </html>
