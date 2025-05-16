@@ -728,7 +728,33 @@
 		</div>
 	  </div>
 	</div>
-	
+
+	<!-- Sezione: Come funziona il 200 Team Tournament -->
+	<div class="collapsible-section">
+	  <div class="collapsible-header" aria-expanded="false">
+		<h2>Come funziona il 200 Team Tournament</h2>
+		<div class="collapsible-toggle">
+		  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+		</div>
+	  </div>
+	  <div class="collapsible-content">
+		<div class="insta-wrapper">
+		  <blockquote class="instagram-media" 
+					data-instgrm-permalink="https://www.instagram.com/reel/DJoXePbIyMe/"
+					data-instgrm-version="14"
+					data-instgrm-hide-caption="true">
+		  </blockquote>
+		</div>
+		
+		<div style="text-align: center; margin-top: 25px; margin-bottom: 25px;">
+		  <a href="https://www.instagram.com/reel/DJoXePbIyMe/" target="_blank" rel="noopener noreferrer"
+			 class="insta-link">
+			Guarda su Instagram
+		  </a>
+		</div>
+	  </div>
+	</div>
+
 	<!-- Sezione: Come valutare un Pokemon -->
 	<div class="collapsible-section">
 	  <div class="collapsible-header" aria-expanded="false">
@@ -747,8 +773,27 @@
 		</div>
 	  </div>
 	</div>
+	
+	<!-- Sezione: Come modificare le statistiche di un Pokemon -->
+	<div class="collapsible-section">
+	  <div class="collapsible-header" aria-expanded="false">
+		<h2>Come modificare le statistiche di un Pokemon</h2>
+		<div class="collapsible-toggle">
+		  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+		</div>
+	  </div>
+	  <div class="collapsible-content">
+		<div class="twitch-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 20px 0;">
+		  <div class="loading-spinner" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+			<i class="fas fa-spinner fa-spin fa-3x" style="color: var(--primary-color);"></i>
+		  </div>
+		  <!-- Placeholder unico per questo embed di Twitch -->
+		  <div id="twitch-embed-modificare" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+		</div>
+	  </div>
+	</div>
 
-    <!-- Sezione 3: Cose da Sapere -->
+    <!-- Sezione: Cose da Sapere -->
     <div class="collapsible-section">
       <div class="collapsible-header">
         <h2>100 cose che devi sapere per giocare alla Kaizo</h2>
@@ -768,7 +813,7 @@
       </div>
     </div>
 
-    <!-- Sezione 4: Interfaccia -->
+    <!-- Sezione: Interfaccia -->
     <div class="collapsible-section">
       <div class="collapsible-header">
         <h2>Interfaccia di gioco</h2>
@@ -787,7 +832,7 @@
       </div>
     </div>
     
-    <!-- Sezione 5: Consigli e Strategie -->
+    <!-- Sezione: Consigli e Strategie -->
     <div class="collapsible-section">
       <div class="collapsible-header">
         <h2>Consigli e Strategie</h2>
@@ -809,7 +854,7 @@
     </div>
     
 
-	<!-- Sezione 6: FAQ Migliorata -->
+	<!-- Sezione: FAQ Migliorata -->
 	<div class="collapsible-section">
 	  <div class="collapsible-header">
 		<h2>Domande Frequenti</h2>
@@ -923,7 +968,13 @@
 	  {
 		id: "twitch-embed-valutare",
 		videoId: "2449808192", 
-		sectionSelector: '.collapsible-section:nth-of-type(3)', // Sezione "Come valutare un Pokemon"
+		sectionSelector: '.collapsible-section:nth-of-type(4)', // Sezione "Come valutare un Pokemon"
+		loaded: false
+	  },
+	  {
+		id: "twitch-embed-modificare",
+		videoId: "2457390045", 
+		sectionSelector: '.collapsible-section:nth-of-type(5)', // Sezione "Come modificare le statistiche di un Pokemon"
 		loaded: false
 	  }
 	];
