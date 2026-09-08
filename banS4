@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista Ban Kaizo Ranked</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZB7SP38WR0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZB7SP38WR0');
+  </script>
+
+  <style>
+    /* Reset e impostazioni base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #121212;
+      color: #e0e0e0;
+      padding-bottom: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Container principale */
+    .main-content {
+      padding-top: 30px;
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    /* Card-style per le sezioni */
+    section {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    section:hover {
+      transform: translateY(-3px);
+    }
+	section h2 {
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: #f8d030;
+		/*text-transform: uppercase; */
+		margin-bottom: 15px;
+		border-bottom: 2px solid #f8d030;
+		padding-bottom: 5px;
+		text-align: center;
+		position: relative;
+	}
+
+    /* Layout a colonne per le mosse bannate */
+    .moves-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+      list-style-type: none;
+      padding: 0;
+    }
+    .moves-grid li {
+      background-color: #292929;
+      padding: 8px;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 0.9rem;
+      position: relative;
+      cursor: pointer;
+    }
+
+    /* Tooltip per le mosse */
+    .move-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .move-container:focus {
+      outline: none;
+    }
+    .tooltip {
+      visibility: hidden;
+      background-color: #444;
+      color: #fff;
+      text-align: center;
+      border-radius: 4px;
+      padding: 4px 8px;
+      position: absolute;
+      z-index: 1;
+      bottom: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    .move-container:hover .tooltip,
+    .move-container:focus .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* Stile elenco abilità */
+    #abilities-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+	#abilities-list li {
+		background-color: #292929;
+		padding: 10px;
+		border-radius: 4px;
+		margin-bottom: 10px;
+		font-size: 0.95rem;
+	}
+    .ability-name {
+      font-weight: bold;
+      color: #f8d030;
+    }
+	#abilities {
+		position: relative;
+	}
+	.abilities-header {
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: #f8d030;
+		margin-bottom: 15px;
+		border-bottom: 2px solid #f8d030;
+		padding-bottom: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.abilities-header > span {
+		text-align: center;
+	}
+
+    /* Titolo principale */
+    h1 {
+      margin-block-start: 0.67em;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+	ul#moves-list, ul#abilities-list {
+		margin-top: 20px;
+	}
+
+  </style>
+</head>
+<body>
+  <div class="main-content">
+    <h1>Kaizo Ranked Ban</h1>
+	<input type="text" id="search" placeholder="Cerca mosse o abilità..." autocomplete="off" style="margin: 10px auto; display: block; padding: 8px; width: 80%; max-width: 300px;">
+
+    <!-- Sezione mosse bannate -->
+    <section id="moves">
+      <h2>Mosse Bannate (standard)</h2>
+      <ul id="moves-list" class="moves-grid">
+        <!-- Le mosse verranno generate qui -->
+      </ul>
+    </section>
+
+    <!-- Sezione abilità bannate -->
+    <section id="abilities">
+    <h2 class="abilities-header">
+        <span>Abilità Modificate</span>
+	</h2>
+    <ul id="abilities-list">
+        </ul>
+	</section>
+  </div>
+
+  <script defer>
+    // Mappatura dei colori per tipo di mossa
+    const typeColors = {
+      "Fuoco": "#F08030",
+      "Acqua": "#6890F0",
+      "Erba": "#78C850",
+      "Elettro": "#F8D030",
+      "Psico": "#F85888",
+      "Coleottero": "#A8B820",
+      "Normale": "#A8A878",
+      "Drago": "#7038F8",
+      "Oscuro": "#705848",
+      "Acciaio": "#B8B8D0",
+      "Ghiaccio": "#98D8D8",
+      "Spettro": "#705898",
+      "Folletto": "#EE99AC",
+      "Roccia": "#B8A038",
+      "Terra": "#E0C068",
+      "Volante": "#A890F0",
+      "Lotta": "#C03028"
+    };
+
+	async function loadAbilities() {
+	  try {
+		const response = await fetch('abilita-ban-s2.json');
+		if (!response.ok) throw new Error('Errore nel caricamento del file abilita-ban-s2.json');
+
+		// Svuota la lista attuale
+		const abilitiesList = document.getElementById('abilities-list');
+		abilitiesList.innerHTML = '';
+
+		// Carica i dati e popola la lista
+		const abilitiesData = await response.json();
+		abilitiesData.forEach(ability => {
+		  const li = document.createElement('li');
+		  const nameSpan = document.createElement('span');
+		  nameSpan.className = 'ability-name';
+		  nameSpan.textContent = ability.nome + ": ";
+		  const descSpan = document.createElement('span');
+		  descSpan.textContent = ability.descrizione;
+		  li.appendChild(nameSpan);
+		  li.appendChild(descSpan);
+		  abilitiesList.appendChild(li);
+		});
+
+		// Recupera il termine di ricerca corrente e applica il filtro
+		const searchTerm = document.getElementById('search').value.toLowerCase();
+		document.querySelectorAll('#abilities-list li').forEach(item => {
+		  const abilityText = item.textContent.toLowerCase();
+		  item.style.display = abilityText.includes(searchTerm) ? '' : 'none';
+		});
+
+	  } catch (error) {
+		console.error(error);
+		const section = document.getElementById('abilities');
+		const errorMsg = document.createElement('p');
+		errorMsg.textContent = 'Errore nel caricamento delle abilità.';
+		errorMsg.style.color = 'red';
+		section.appendChild(errorMsg);
+	  }
+	}
+
+    async function loadData() {
+      try {
+        // Carica le mosse bannate
+        const movesResponse = await fetch('mosse-ban.json');
+        if (!movesResponse.ok) throw new Error('Errore nel caricamento del file mosse-ban.json');
+        const movesData = await movesResponse.json();
+
+        const movesList = document.getElementById('moves-list');
+        movesData.forEach(move => {
+          const li = document.createElement('li');
+          li.style.color = typeColors[move.type] || "#e0e0e0";
+
+          // Container per il tooltip
+          const container = document.createElement('div');
+          container.className = 'move-container';
+          container.setAttribute('tabindex', '0');
+
+          // Nome della mossa
+          const moveNameSpan = document.createElement('span');
+          moveNameSpan.textContent = move.move;
+
+          // Tooltip che mostra il tipo della mossa
+          const tooltipSpan = document.createElement('span');
+          tooltipSpan.className = 'tooltip';
+          tooltipSpan.textContent = move.type;
+
+          container.appendChild(moveNameSpan);
+          container.appendChild(tooltipSpan);
+          li.appendChild(container);
+          movesList.appendChild(li);
+        });
+
+        // Carica abilità
+        await loadAbilities();
+
+      } catch (error) {
+        console.error(error);
+        const main = document.querySelector('.main-content');
+        const errorMsg = document.createElement('p');
+        errorMsg.textContent = 'Si è verificato un errore nel caricamento dei dati.';
+        errorMsg.style.color = 'red';
+        main.appendChild(errorMsg);
+      }
+    }
+
+	document.getElementById('search').addEventListener('input', () => {
+	const searchTerm = document.getElementById('search').value.toLowerCase();
+	  // Filtra le mosse
+	  document.querySelectorAll('#moves-list li').forEach(item => {
+		const text = item.textContent.toLowerCase();
+		item.style.display = text.includes(searchTerm) ? '' : 'none';
+	  });
+	  // Filtra le abilità
+	  document.querySelectorAll('#abilities-list li').forEach(item => {
+		const abilityText = item.textContent.toLowerCase();
+		item.style.display = abilityText.includes(searchTerm) ? '' : 'none';
+	  });
+	});
+
+    window.addEventListener('DOMContentLoaded', loadData);
+  </script>
+</body>
+</html>
